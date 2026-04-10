@@ -80,17 +80,6 @@ export default function Home() {
       setWorstCpMatch(result.worstCpMatch)
       setAnswers(newAnswers)
       setScreen('result')
-
-      // 异步上报测试结果（静默，不影响用户体验）
-      fetch('/api/result', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          runnerType: result.runnerType,
-          dimensionScores: result.dimensionScores,
-          answers: newAnswers,
-        }),
-      }).catch(() => {})
     }
   }, [currentIndex, questions, answers])
 
