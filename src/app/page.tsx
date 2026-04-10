@@ -83,6 +83,14 @@ export default function Home() {
     }
   }, [currentIndex, questions, answers])
 
+  const goBack = useCallback(() => {
+    if (currentIndex > 0) {
+      const newAnswers = answers.slice(0, -1)
+      setAnswers(newAnswers)
+      setCurrentIndex(prev => prev - 1)
+    }
+  }, [currentIndex, answers])
+
   const currentQuestion = questions[currentIndex]
   const progress = questions.length > 0 ? ((currentIndex + 1) / questions.length) * 100 : 0
   const description = getResultDescription(runnerType, isHiddenType)
@@ -126,7 +134,7 @@ export default function Home() {
         scale: 2,
         useCORS: true,
         width: 420,
-        height: 700,
+        height: 840,
       })
 
       target.style.display = 'none'
@@ -247,10 +255,14 @@ export default function Home() {
 
       {/* ==================== 答题页 ==================== */}
       {screen === 'quiz' && currentQuestion && (
-        <div className="question-screen">
+        <div className="question-screen" key={currentQuestion.id}>
           <div className="question-header">
             <span className="question-progress">
-              {currentIndex + 1} / {questions.length}
+              {currentIndex > 0 ? (
+                <button className="back-btn" onClick={goBack}>← 上一题</button>
+              ) : (
+                <span>{currentIndex + 1} / {questions.length}</span>
+              )}
             </span>
             <span className="question-dimension">
               {DIMENSION_LABELS[currentQuestion.dimension] || currentQuestion.dimension}
@@ -269,7 +281,7 @@ export default function Home() {
           <div className="question-options">
             {currentQuestion.options.map((opt) => (
               <button
-                key={opt.label}
+                key={`${currentQuestion.id}-${opt.label}`}
                 className="option-btn"
                 onClick={() => handleAnswer(opt.label)}
               >
@@ -459,9 +471,25 @@ export default function Home() {
           {eggSymbols.length > 0 && (
             <div className="share-card-eggs">{eggSymbols.join('')}</div>
           )}
-          <div className="share-card-roast">&ldquo;{roast}&rdquo;</div>
-          <div className="share-card-footer">扫码测试你是哪种跑者</div>
-          <div className="share-card-qr">👉 run-sbti.com</div>
+          {roast && <div className="share-card-roast">&ldquo;{roast}&rdquo;</div>}
+          {cpMatch.type && (
+            <div className="share-card-cp">
+              🏅 最合拍: {cpMatch.type}（{getTypeMeta(cpMatch.type).en}） 契合度{cpMatch.score}%
+            </div>
+          )}
+          {donutSegments.length > 0 && (
+            <div className="share-card-dims">
+              {donutSegments.slice(0, 3).map(seg => (
+                <span key={seg.dim} className="share-card-dim">
+                  {DIMENSION_LABELS[seg.dim]} {Math.round(seg.pct)}%
+                </span>
+              ))}
+            </div>
+          )}
+          <div className="share-card-footer">测测你是哪种跑者</div>
+          <div className="share-card-url">
+            {typeof window !== 'undefined' ? window.location.host : ''}
+          </div>
         </div>
       </div>
     </div>
