@@ -36,6 +36,7 @@ export default function Home() {
   const [roast, setRoast] = useState('')
   const [hype, setHype] = useState('')
   const [action, setAction] = useState('')
+  const [verdict, setVerdict] = useState('')
   const [cpMatch, setCpMatch] = useState({ type: '', desc: '', score: 0 })
   const [worstCpMatch, setWorstCpMatch] = useState({ type: '', desc: '', score: 0 })
   const [nameInput, setNameInput] = useState('')
@@ -77,6 +78,7 @@ export default function Home() {
       setRoast(result.roast || '')
       setHype(result.hype || '')
       setAction(result.action || '')
+      setVerdict(result.verdict || '')
       setCpMatch(result.cpMatch)
       setWorstCpMatch(result.worstCpMatch)
       setAnswers(newAnswers)
@@ -180,6 +182,7 @@ export default function Home() {
     setAction('')
     setCpMatch({ type: '', desc: '', score: 0 })
     setWorstCpMatch({ type: '', desc: '', score: 0 })
+    setVerdict('')
     setShareImageSrc('')
   }, [])
 
@@ -333,6 +336,14 @@ export default function Home() {
             <div className="roast-icon">💀</div>
             <p>{roast}</p>
           </div>
+
+          {/* 判词（可追溯的判定依据） */}
+          {verdict && (
+            <div className="result-verdict">
+              <div className="verdict-icon">🔍</div>
+              <p>{verdict}</p>
+            </div>
+          )}
 
           {hype && (
             <div className="result-hype">

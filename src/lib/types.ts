@@ -38,6 +38,7 @@ export interface TagResult {
   action?: string
   cpMatch?: { type: string; desc: string; score: number }
   worstCpMatch?: { type: string; desc: string; score: number }
+  verdict?: string
 }
 
 export interface EggTrigger {

@@ -335,119 +335,145 @@ function calcDimensionScore(answers: Answer[], dimension: string): number {
   return Math.min(100, Math.max(5, base + jitter))
 }
 
-// 判定角色类型（打分制）
-function determineRunnerType(answers: Answer[], dimensionScores: Record<string, number>): string {
+// 行为画像：从答案中提取可追溯的行为特征
+interface BehaviorProfile {
+  aA: number; aB: number; aC: number; aD: number  // A类题各选项计数
+  bA: number; bB: number; bC: number; bD: number  // B类题各选项计数
+  totalD: number       // D选项总数（摆烂指数）
+  topDim: string       // 最高维度
+  bottomDim: string    // 最低维度
+  dominant: 'A' | 'B' | 'C' | 'D'  // 最常选的选项
+  patterns: string[]   // 识别到的行为模式标签
+}
+
+function buildProfile(answers: Answer[], dimensionScores: Record<string, number>): BehaviorProfile {
   const aAns = answers.filter(a => a.dimension[0] === 'A')
   const bAns = answers.filter(a => a.dimension[0] === 'B')
 
-  const aAcount = aAns.filter(a => a.optionLabel === 'A').length
-  const aBcount = aAns.filter(a => a.optionLabel === 'B').length
-  const aCcount = aAns.filter(a => a.optionLabel === 'C').length
-  const aDcount = aAns.filter(a => a.optionLabel === 'D').length
+  const aA = aAns.filter(a => a.optionLabel === 'A').length
+  const aB = aAns.filter(a => a.optionLabel === 'B').length
+  const aC = aAns.filter(a => a.optionLabel === 'C').length
+  const aD = aAns.filter(a => a.optionLabel === 'D').length
+  const bA = bAns.filter(a => a.optionLabel === 'A').length
+  const bB = bAns.filter(a => a.optionLabel === 'B').length
+  const bC = bAns.filter(a => a.optionLabel === 'C').length
+  const bD = bAns.filter(a => a.optionLabel === 'D').length
+  const totalD = answers.filter(a => a.optionLabel === 'D').length
 
-  const bAcount = bAns.filter(a => a.optionLabel === 'A').length
-  const bBcount = bAns.filter(a => a.optionLabel === 'B').length
-  const bCcount = bAns.filter(a => a.optionLabel === 'C').length
-  const bDcount = bAns.filter(a => a.optionLabel === 'D').length
+  // 找最高/最低维度
+  const dimEntries = Object.entries(dimensionScores).filter(([_, s]) => s > 0)
+  dimEntries.sort((a, b) => b[1] - a[1])
+  const topDim = dimEntries[0]?.[0] || ''
+  const bottomDim = dimEntries[dimEntries.length - 1]?.[0] || ''
 
-  const dCount = answers.filter(a => a.optionLabel === 'D').length
+  // 最常选的选项
+  const counts = { A: aA + bA, B: aB + bB, C: aC + bC, D: totalD }
+  const dominant = (Object.entries(counts).sort((a, b) => b[1] - a[1])[0]?.[0] || 'C') as 'A' | 'B' | 'C' | 'D'
 
-  // 每个角色打分：根据答案分布和维度得分匹配度
-  const scores: Record<string, number> = {}
+  // 识别行为模式
+  const patterns: string[] = []
+  if (totalD >= 6) patterns.push('躺平型')
+  if (aA >= 6) patterns.push('卷王型')
+  if (aC >= 5) patterns.push('社交型')
+  if (aA >= 4 && bB >= 2) patterns.push('嘴强王者')
+  if (bD >= 4) patterns.push('退赛预备役')
+  if (aA <= 2 && aB <= 2 && aC <= 2 && aD <= 2) patterns.push('端水大师')
+  if (dimensionScores['B2'] >= 70 && dimensionScores['A3'] >= 60) patterns.push('装备控')
+  if (totalD <= 2 && aA >= 5) patterns.push('铁人')
+  if (bB >= 3) patterns.push('吃货')
+  if (aD >= 3 && bD >= 3) patterns.push('佛系本系')
 
+  return { aA, aB, aC, aD, bA, bB, bC, bD, totalD, topDim, bottomDim, dominant, patterns }
+}
+
+// 每种角色的"行为画像指纹"——匹配函数
+type Matcher = (p: BehaviorProfile, ds: Record<string, number>) => number
+
+const TYPE_MATCHERS: Record<string, Matcher> = {
+  '独行侠': (p) => p.aA * 3 + (p.topDim === 'A1' ? 15 : 0) + (p.aC <= 3 ? 8 : 0),
+  '完赛怪': (p) => p.aB * 3 + (p.topDim === 'A2' ? 15 : 0) + p.bA * 2,
+  '拍照精': (p) => p.aC * 4 + (p.dominant === 'C' ? 10 : 0) + (p.aC >= 4 ? 10 : 0),
+  '撞墙王': (p, ds) => (p.aA >= 3 ? 8 : 0) + (ds['B1'] < 50 ? 15 : 0) + (p.aB <= 2 ? 5 : 0),
+  '号码布收藏家': (p) => (p.aA >= 3 ? 6 : 0) + p.bD * 4 + (p.bottomDim === 'B4' ? 12 : 0),
+  '补给站流浪者': (p) => p.bB * 5 + (p.topDim === 'B2' ? 12 : 0) + (p.aC >= 3 ? 5 : 0),
+  'Garmin信徒': (p, ds) => p.aB * 3 + (ds['A3'] > 60 ? 15 : 0) + (ds['A2'] > 60 ? 8 : 0),
+  'Keep原住民': (p) => p.totalD * 5 + (p.dominant === 'D' ? 15 : 0) + (p.bottomDim === 'A4' ? 8 : 0),
+  '跑团团长': (p) => p.bA * 4 + (p.aB >= 3 ? 8 : 0) + (p.topDim === 'A1' ? 8 : 0),
+  '赛道天气预报员': (p, ds) => (ds['B3'] > 60 ? 12 : 0) + (p.bA >= 2 ? 6 : 0) + (ds['A3'] > 50 ? 8 : 0),
+  '装备极简主义者': (p, ds) => (ds['B3'] < 45 ? 15 : 0) + (ds['A3'] < 40 ? 10 : 0) + (p.bC >= 2 ? 5 : 0),
+  '装备焦虑者': (p, ds) => (ds['B3'] > 65 ? 12 : 0) + (ds['A3'] > 60 ? 8 : 0) + p.bD * 3,
+  '素人跑者': (p) => {
+    const max = Math.max(p.aA, p.aB, p.aC, p.aD)
+    return (max <= 5 ? 15 : 0) + (p.patterns.includes('端水大师') ? 10 : 0)
+  },
+  '赛博跑者': (p, ds) => p.aB * 3 + (ds['A2'] > 65 ? 15 : 0) + (ds['A3'] > 55 ? 8 : 0),
+  '精神完赛者': (p) => p.aD * 4 + (p.totalD >= 6 ? 10 : 0) + (p.bottomDim === 'A4' ? 10 : 0),
+  '回归初心型': (p, ds) => (ds['A5'] > 65 ? 18 : 0) + (ds['A4'] > 50 ? 8 : 0) + p.aA * 1,
+  '爬山遇难型': (p, ds) => (ds['B1'] < 45 ? 18 : 0) + (ds['B3'] < 45 ? 8 : 0) + p.bD * 3,
+  '自补给大师': (p, ds) => (ds['B2'] > 60 ? 15 : 0) + p.bB * 3 + (p.bA >= 2 ? 5 : 0),
+  '散步跑者': (p, ds) => (p.aC >= 4 ? 10 : 0) + p.bD * 3 + (ds['A2'] < 50 ? 10 : 0),
+  'DNF重生者': (p, ds) => p.aD * 3 + (ds['B4'] < 50 ? 12 : 0) + (p.bC >= 2 ? 5 : 0),
+  '打工人跑者': (p, ds) => (ds['A4'] > 65 ? 18 : 0) + (p.aA >= 4 ? 8 : 0) + (ds['A1'] > 55 ? 5 : 0),
+  '刷脂战士': (p, ds) => (p.bB >= 2 ? 8 : 0) + (p.aB >= 3 ? 8 : 0) + (ds['B2'] > 55 ? 8 : 0),
+  '佛系跑者': (p, ds) => p.aC * 3 + (ds['A5'] > 50 ? 8 : 0) + (p.aA <= 3 ? 8 : 0),
+  '卷王': (p, ds) => (p.aA >= 5 ? 10 : 0) + (ds['A2'] > 65 ? 15 : 0) + (ds['A4'] > 60 ? 8 : 0),
+}
+
+// 判定角色类型（画像匹配 + 候选池加权随机）
+function determineRunnerType(answers: Answer[], dimensionScores: Record<string, number>): string {
+  const profile = buildProfile(answers, dimensionScores)
+
+  // 第一步：每个角色算匹配分
+  const scores: Array<{ type: string; score: number }> = []
   for (const type of RUNNER_TYPES) {
-    scores[type] = 0
+    const matcher = TYPE_MATCHERS[type]
+    const score = matcher ? matcher(profile, dimensionScores) : 0
+    scores.push({ type, score })
   }
 
-  // --- 独行侠：A为主，一个人跑 ---
-  scores['独行侠'] += aAcount * 2 + (dimensionScores['A1'] > 60 ? 10 : 0) + (aCcount <= 3 ? 5 : 0)
+  // 排序取 top 5 候选
+  scores.sort((a, b) => b.score - a.score)
+  const candidates = scores.slice(0, 5)
 
-  // --- 完赛怪：A选项但偏B，关注成绩 ---
-  scores['完赛怪'] += aBcount * 2 + (dimensionScores['A2'] > 60 ? 10 : 0) + (bAcount >= 3 ? 5 : 0)
+  // 第二步：加权随机（第一名概率最高，但不是100%）
+  // 权重: [50, 25, 12, 8, 5]
+  const weights = [50, 25, 12, 8, 5]
+  const totalWeight = weights.reduce((s, w) => s + w, 0)
+  let roll = Math.random() * totalWeight
 
-  // --- 拍照精：C选项多，社交属性 ---
-  scores['拍照精'] += aCcount * 3 + (dimensionScores['A1'] > 50 && aCcount >= 4 ? 8 : 0)
-
-  // --- 撞墙王：A多但越野低 ---
-  scores['撞墙王'] += (aAcount >= 4 ? 6 : 0) + (dimensionScores['B1'] < 50 ? 10 : 0) + (dimensionScores['A2'] < 50 ? 5 : 0)
-
-  // --- 号码布收藏家：A多但B消极 ---
-  scores['号码布收藏家'] += (aAcount >= 4 ? 5 : 0) + bDcount * 3 + (dimensionScores['B4'] < 50 ? 8 : 0)
-
-  // --- 补给站流浪者：B补给相关 ---
-  scores['补给站流浪者'] += bBcount * 3 + (dimensionScores['B2'] > 60 ? 8 : 0) + (aCcount >= 3 ? 3 : 0)
-
-  // --- Garmin信徒：B选项数据 ---
-  scores['Garmin信徒'] += aBcount * 2 + (dimensionScores['A3'] > 60 ? 10 : 0) + (dimensionScores['A2'] > 60 ? 5 : 0)
-
-  // --- Keep原住民：D选项极多 ---
-  scores['Keep原住民'] += dCount * 4 + (dimensionScores['A4'] < 40 ? 8 : 0)
-
-  // --- 跑团团长：B的组织+A的社交 ---
-  scores['跑团团长'] += bAcount * 3 + (aBcount >= 3 ? 5 : 0) + (dimensionScores['A1'] > 50 ? 5 : 0)
-
-  // --- 赛道天气预报员：焦虑+关注环境 ---
-  scores['赛道天气预报员'] += (dimensionScores['B3'] > 60 ? 8 : 0) + (bAcount >= 2 ? 4 : 0) + (dimensionScores['A3'] > 50 ? 5 : 0)
-
-  // --- 装备极简主义者：轻量化 ---
-  scores['装备极简主义者'] += (dimensionScores['B3'] < 45 ? 10 : 0) + (dimensionScores['A3'] < 40 ? 8 : 0) + (bCcount >= 2 ? 3 : 0)
-
-  // --- 装备焦虑者：装备维度高+焦虑 ---
-  scores['装备焦虑者'] += (dimensionScores['B3'] > 65 ? 10 : 0) + (dimensionScores['A3'] > 60 ? 5 : 0) + bDcount * 2
-
-  // --- 素人跑者：均衡无明显倾向 ---
-  const maxOptionCount = Math.max(aAcount, aBcount, aCcount, aDcount)
-  scores['素人跑者'] += (maxOptionCount <= 5 ? 8 : 0) + (aAns.length >= 15 ? 3 : 0)
-
-  // --- 赛博跑者：数据+排名 ---
-  scores['赛博跑者'] += aBcount * 2 + (dimensionScores['A2'] > 65 ? 10 : 0) + (dimensionScores['A3'] > 55 ? 5 : 0)
-
-  // --- 精神完赛者：D选项多+躺平 ---
-  scores['精神完赛者'] += aDcount * 3 + (dimensionScores['A4'] < 45 ? 8 : 0) + (dCount >= 6 ? 6 : 0)
-
-  // --- 回归初心型：A5高+怀旧 ---
-  scores['回归初心型'] += (dimensionScores['A5'] > 65 ? 12 : 0) + (dimensionScores['A4'] > 50 ? 5 : 0) + aAcount
-
-  // --- 爬山遇难型：越野技术低 ---
-  scores['爬山遇难型'] += (dimensionScores['B1'] < 45 ? 12 : 0) + (dimensionScores['B3'] < 45 ? 5 : 0) + bDcount * 2
-
-  // --- 自补给大师：自补给+规划 ---
-  scores['自补给大师'] += (dimensionScores['B2'] > 60 ? 10 : 0) + bBcount * 2 + (bAcount >= 2 ? 3 : 0)
-
-  // --- 散步跑者：佛系+慢 ---
-  scores['散步跑者'] += (aCcount >= 4 ? 6 : 0) + bDcount * 2 + (dimensionScores['A2'] < 50 ? 8 : 0) + (dimensionScores['B4'] < 50 ? 5 : 0)
-
-  // --- DNF重生者：D选项+退赛态度 ---
-  scores['DNF重生者'] += aDcount * 2 + (dimensionScores['B4'] < 50 ? 8 : 0) + (bCcount >= 2 ? 3 : 0)
-
-  // --- 打工人跑者：效率+早起 ---
-  scores['打工人跑者'] += (dimensionScores['A4'] > 65 ? 12 : 0) + (aAcount >= 4 ? 5 : 0) + (dimensionScores['A1'] > 55 ? 3 : 0)
-
-  // --- 刷脂战士：吃+跑 ---
-  scores['刷脂战士'] += (bBcount >= 2 ? 5 : 0) + (aBcount >= 3 ? 5 : 0) + (dimensionScores['B2'] > 55 ? 5 : 0) + (dimensionScores['A4'] < 50 ? 3 : 0)
-
-  // --- 佛系跑者：C多+不卷 ---
-  scores['佛系跑者'] += aCcount * 2 + (dimensionScores['A5'] > 50 ? 5 : 0) + (aAcount <= 3 ? 5 : 0)
-
-  // --- 卷王：A+配速 ---
-  scores['卷王'] += (aAcount >= 5 ? 8 : 0) + (dimensionScores['A2'] > 65 ? 10 : 0) + (dimensionScores['A4'] > 60 ? 5 : 0)
-
-  // 加入少量随机抖动，避免同分固定
-  for (const type of RUNNER_TYPES) {
-    scores[type] += Math.random() * 3
+  for (let i = 0; i < candidates.length; i++) {
+    roll -= weights[i]
+    if (roll <= 0) return candidates[i].type
   }
 
-  // 选最高分
-  let bestType = RUNNER_TYPES[0]
-  let bestScore = -1
-  for (const type of RUNNER_TYPES) {
-    if (scores[type] > bestScore) {
-      bestScore = scores[type]
-      bestType = type
-    }
+  return candidates[0].type
+}
+
+// 生成判词（基于实际答案的可追溯槽点）
+function generateVerdict(answers: Answer[], runnerType: string, dimensionScores: Record<string, number>): string {
+  const profile = buildProfile(answers, dimensionScores)
+  const clues: string[] = []
+
+  // 基于答案分布的线索
+  if (profile.totalD >= 6) clues.push(`你选了${profile.totalD}次"摆烂/D"选项`)
+  if (profile.aA >= 6) clues.push(`A类题你选了${profile.aA}次A，卷到不行`)
+  if (profile.aC >= 5) clues.push(`${profile.aC}次选C，社交属性拉满`)
+  if (profile.bD >= 4) clues.push(`越野题${profile.bD}次选D，山野劝退`)
+  if (profile.bB >= 3) clues.push(`${profile.bB}次选和B补给相关，是真爱吃`)
+  if (profile.aD >= 4) clues.push(`${profile.aD}次选D，躺平意愿明显`)
+  if (profile.aB >= 5) clues.push(`${profile.aB}次选B，理性分析派`)
+
+  // 基于维度
+  if (profile.topDim) {
+    clues.push(`主导维度: ${DIMENSION_LABELS[profile.topDim]}`)
   }
 
-  return bestType
+  // 如果没线索，用兜底
+  if (clues.length === 0) {
+    clues.push('你的答案分布非常均衡，是个谜一样的跑者')
+  }
+
+  return clues.join('；') + ` → 判定: ${runnerType}`
 }
 
 // 计算结果
@@ -501,6 +527,7 @@ export function calculateResult(answers: Answer[]): TagResult & {
     action: meta?.action || '去跑步吧。',
     cpMatch,
     worstCpMatch,
+    verdict: generateVerdict(answers, runnerType, dimensionScores),
   }
 }
 
