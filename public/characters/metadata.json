@@ -1,0 +1,146 @@
+[
+  {
+    "id": "lone_wolf",
+    "cn": "独行侠",
+    "en": "Lone Wolf",
+    "file": "/characters/lone_wolf.png"
+  },
+  {
+    "id": "medal_freak",
+    "cn": "完赛怪",
+    "en": "Medal Freak",
+    "file": "/characters/medal_freak.png"
+  },
+  {
+    "id": "shot_hunter",
+    "cn": "拍照精",
+    "en": "Shot Hunter",
+    "file": "/characters/shot_hunter.png"
+  },
+  {
+    "id": "wall_hugger",
+    "cn": "撞墙王",
+    "en": "Wall Hugger",
+    "file": "/characters/wall_hugger.png"
+  },
+  {
+    "id": "bib_hoarder",
+    "cn": "号码布收藏家",
+    "en": "Bib Hoarder",
+    "file": "/characters/bib_hoarder.png"
+  },
+  {
+    "id": "snack_nomad",
+    "cn": "补给站流浪者",
+    "en": "Snack Nomad",
+    "file": "/characters/snack_nomad.png"
+  },
+  {
+    "id": "data_cultist",
+    "cn": "Garmin信徒",
+    "en": "Data Cultist",
+    "file": "/characters/data_cultist.png"
+  },
+  {
+    "id": "couch_runner",
+    "cn": "Keep原住民",
+    "en": "Couch Runner",
+    "file": "/characters/couch_runner.png"
+  },
+  {
+    "id": "pack_leader",
+    "cn": "跑团团长",
+    "en": "Pack Leader",
+    "file": "/characters/pack_leader.png"
+  },
+  {
+    "id": "weather_nerd",
+    "cn": "赛道天气预报员",
+    "en": "Weather Nerd",
+    "file": "/characters/weather_nerd.png"
+  },
+  {
+    "id": "gear_monk",
+    "cn": "装备极简主义者",
+    "en": "Gear Monk",
+    "file": "/characters/gear_monk.png"
+  },
+  {
+    "id": "gear_panic",
+    "cn": "装备焦虑者",
+    "en": "Gear Panic",
+    "file": "/characters/gear_panic.png"
+  },
+  {
+    "id": "ghost_runner",
+    "cn": "素人跑者",
+    "en": "Ghost Runner",
+    "file": "/characters/ghost_runner.png"
+  },
+  {
+    "id": "cyber_runner",
+    "cn": "赛博跑者",
+    "en": "Cyber Runner",
+    "file": "/characters/cyber_runner.png"
+  },
+  {
+    "id": "soul_finisher",
+    "cn": "精神完赛者",
+    "en": "Soul Finisher",
+    "file": "/characters/soul_finisher.png"
+  },
+  {
+    "id": "day_one",
+    "cn": "回归初心型",
+    "en": "Day One",
+    "file": "/characters/day_one.png"
+  },
+  {
+    "id": "hill_victim",
+    "cn": "爬山遇难型",
+    "en": "Hill Victim",
+    "file": "/characters/hill_victim.png"
+  },
+  {
+    "id": "diy_fuel",
+    "cn": "自补给大师",
+    "en": "DIY Fuel",
+    "file": "/characters/diy_fuel.png"
+  },
+  {
+    "id": "slow_mo",
+    "cn": "散步跑者",
+    "en": "Slow Mo",
+    "file": "/characters/slow_mo.png"
+  },
+  {
+    "id": "dnf_phoenix",
+    "cn": "DNF重生者",
+    "en": "DNF Phoenix",
+    "file": "/characters/dnf_phoenix.png"
+  },
+  {
+    "id": "5am_warrior",
+    "cn": "打工人跑者",
+    "en": "5AM Warrior",
+    "file": "/characters/5am_warrior.png"
+  },
+  {
+    "id": "buffet_warrior",
+    "cn": "刷脂战士",
+    "en": "Buffet Warrior",
+    "file": "/characters/buffet_warrior.png"
+  },
+  {
+    "id": "zen_runner",
+    "cn": "佛系跑者",
+    "en": "Zen Runner",
+    "file": "/characters/zen_runner.png"
+  },
+  {
+    "id": "pb_tyrant",
+    "cn": "卷王",
+    "en": "PB Tyrant",
+    "file": "/characters/pb_tyrant.png"
+  }
+]
