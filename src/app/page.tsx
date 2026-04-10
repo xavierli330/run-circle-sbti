@@ -39,6 +39,7 @@ export default function Home() {
   const [cpMatch, setCpMatch] = useState({ type: '', desc: '', score: 0 })
   const [worstCpMatch, setWorstCpMatch] = useState({ type: '', desc: '', score: 0 })
   const [nameInput, setNameInput] = useState('')
+  const [shareImageSrc, setShareImageSrc] = useState('')
   const resultRef = useRef<HTMLDivElement>(null)
   const shareCardRef = useRef<HTMLDivElement>(null)
 
@@ -119,7 +120,7 @@ export default function Home() {
       })
   }, [dimensionScores])
 
-  // 分享图用单独ref，确保干净捕获
+  // 分享图：生成图片 → 弹窗展示（长按保存）
   const shareAsImage = useCallback(async () => {
     const target = shareCardRef.current
     if (!target) return
@@ -142,10 +143,20 @@ export default function Home() {
       target.style.left = ''
       target.style.top = ''
 
-      const link = document.createElement('a')
-      link.download = `跑圈SBTI_${userName || '跑者'}_${fullTag}.png`
-      link.href = canvas.toDataURL('image/png')
-      link.click()
+      const dataUrl = canvas.toDataURL('image/png')
+
+      // 尝试下载（PC/普通浏览器）
+      try {
+        const link = document.createElement('a')
+        link.download = `跑圈SBTI_${userName || '跑者'}_${fullTag}.png`
+        link.href = dataUrl
+        link.click()
+      } catch {
+        // 下载失败（微信浏览器），忽略
+      }
+
+      // 弹窗展示图片，用户可长按保存
+      setShareImageSrc(dataUrl)
     } catch (e) {
       console.error('Failed to generate image:', e)
     }
@@ -169,6 +180,7 @@ export default function Home() {
     setAction('')
     setCpMatch({ type: '', desc: '', score: 0 })
     setWorstCpMatch({ type: '', desc: '', score: 0 })
+    setShareImageSrc('')
   }, [])
 
   // 比赛难度星星
@@ -492,6 +504,17 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* ==================== 分享图弹窗（长按保存） ==================== */}
+      {shareImageSrc && (
+        <div className="share-overlay" onClick={() => setShareImageSrc('')}>
+          <div className="share-overlay-content" onClick={e => e.stopPropagation()}>
+            <div className="share-overlay-hint">长按图片保存到相册</div>
+            <img className="share-overlay-img" src={shareImageSrc} alt="分享图" />
+            <button className="share-overlay-close" onClick={() => setShareImageSrc('')}>关闭</button>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
