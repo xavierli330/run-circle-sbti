@@ -1,0 +1,3 @@
+id,dimension,category,text,optionA,optionB,optionC,optionD,isSoul,isActive
+A1,A1,general,"题目示例：你为什么开始跑步？","因为想减肥","因为想变帅","因为别人都在跑","完全不记得了",false,true
+B1,B1,trail,"题目示例：第一次越野跑你的感受？","还想再来","再也不来了","还好没死","什么是越野跑？",false,true

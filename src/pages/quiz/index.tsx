@@ -1,14 +1,16 @@
 import { useState, useCallback } from 'react'
 import { View, Text } from '@tarojs/components'
 import Taro from '@tarojs/taro'
-import { calculateResult } from '@/lib/quiz'
+import { calculateResult, DIMENSION_LABELS } from '@/lib/quiz'
 import { Question, Answer } from '@/lib/types'
 import './index.scss'
 
-const DIMENSION_LABELS: Record<string, string> = {
-  A1: '跑步身份', A2: '赛道行为', A3: '装备执念',
-  A4: '灵魂深处', A5: '跑步哲学',
-  B1: '山野态度', B2: '补给策略', B3: '装备取舍', B4: '完赛心态',
+const getPhaseLabel = (current: number, total: number): string => {
+  const ratio = current / total
+  if (ratio <= 0.2) return '还在热身，心率还没上来'
+  if (ratio <= 0.47) return '进入巡航配速，有点感觉了'
+  if (ratio <= 0.73) return '撞墙期快到了，坚持住'
+  return '最后冲刺，马上看到终点'
 }
 
 export default function Quiz() {
@@ -50,6 +52,7 @@ export default function Quiz() {
         <Text className='question-progress'>
           {currentIndex + 1} / {questions.length}
         </Text>
+        <Text className='question-phase'>{getPhaseLabel(currentIndex, questions.length)}</Text>
         <Text className='question-dimension'>
           {DIMENSION_LABELS[currentQuestion.dimension] || currentQuestion.dimension}
         </Text>
@@ -59,7 +62,10 @@ export default function Quiz() {
         <View className='progress-fill' style={{ width: `${progress}%` }} />
       </View>
 
-      <Text className='question-text'>{currentQuestion.text}</Text>
+      <View className={`question-body ${currentQuestion.isSoul ? 'soul-question' : ''}`}>
+        <Text className='question-text'>{currentQuestion.text}</Text>
+        {currentQuestion.isSoul && <Text className='soul-badge'>灵魂拷问</Text>}
+      </View>
 
       <View className='options'>
         {currentQuestion.options.map(opt => (
