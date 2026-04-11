@@ -1,0 +1,217 @@
+import { useState, useMemo } from 'react'
+import { View, Text, Image, Button } from '@tarojs/components'
+import Taro from '@tarojs/taro'
+import { getTypeMeta, getRaceRecommendations } from '@/lib/quiz'
+import { characterImg } from '@/lib/config'
+import './index.scss'
+
+const DIMENSION_LABELS: Record<string, string> = {
+  A1: '跑步身份', A2: '赛道行为', A3: '装备执念',
+  A4: '灵魂深处', A5: '跑步哲学',
+  B1: '山野态度', B2: '补给策略', B3: '装备取舍', B4: '完赛心态',
+}
+
+const DIMENSION_COLORS: Record<string, string> = {
+  A1: '#E63946', A2: '#F4A261', A3: '#2A9D8F',
+  A4: '#7B2CBF', A5: '#457B9D',
+  B1: '#6A994E', B2: '#BC4749', B3: '#E9C46A', B4: '#264653',
+}
+
+export default function Result() {
+  const [result] = useState(() => Taro.getStorageSync('quizResult'))
+  if (!result) return <View />
+
+  const {
+    userName, runnerType, runnerTypeEn, runnerImg, tagline,
+    eggSymbols, isHiddenType, dimensionScores,
+    roast, hype, action, cpMatch, worstCpMatch,
+  } = result
+
+  // 维度环形图数据
+  const donutSegments = useMemo(() => {
+    const entries = Object.entries(dimensionScores || {}).filter(([_, s]: [string, number]) => s > 0)
+    if (entries.length === 0) return []
+    const total = entries.reduce((sum: number, [_, s]: [string, number]) => sum + s, 0)
+    let cumulative = 0
+    return entries
+      .sort((a: [string, number], b: [string, number]) => b[1] - a[1])
+      .map(([dim, score]: [string, number]) => {
+        const pct = total > 0 ? (score / total) * 100 : 0
+        const seg = { dim, score, pct, start: cumulative, color: DIMENSION_COLORS[dim] || '#94A3B8' }
+        cumulative += pct
+        return seg
+      })
+  }, [dimensionScores])
+
+  const raceRecommendations = useMemo(() => {
+    if (!runnerType) return []
+    return getRaceRecommendations(runnerType)
+  }, [runnerType])
+
+  const resetQuiz = () => {
+    Taro.removeStorageSync('quizState')
+    Taro.removeStorageSync('quizResult')
+    Taro.reLaunch({ url: '/pages/index/index' })
+  }
+
+  // 分享
+  const onShareAppMessage = () => {
+    return {
+      title: `我是${runnerType}！测测你是哪种跑者`,
+      path: '/pages/index/index',
+      imageUrl: runnerImg ? characterImg(runnerImg) : '',
+    }
+  }
+
+  const renderStars = (score: number) => '★'.repeat(score) + '☆'.repeat(5 - score)
+
+  return (
+    <View className={`result-screen ${isHiddenType ? 'hidden-mode' : ''}`}>
+      {/* badge */}
+      <View className='result-badge'>
+        <Text>{isHiddenType ? '🎉 隐藏人格解锁' : '🏁 测试完成'}</Text>
+      </View>
+
+      {/* 英雄区 */}
+      <View className='hero-section'>
+        {runnerImg && (
+          <Image
+            className='hero-avatar'
+            src={characterImg(runnerImg)}
+            mode='aspectFill'
+          />
+        )}
+        {userName && <Text className='result-name'>{userName}</Text>}
+        <Text className='hero-type'>{runnerType}</Text>
+        {runnerTypeEn && <Text className='hero-type-en'>{runnerTypeEn}</Text>}
+        {tagline && <Text className='hero-tagline'>"{tagline}"</Text>}
+        {eggSymbols && eggSymbols.length > 0 && (
+          <Text className='hero-eggs'>{eggSymbols.join('')}</Text>
+        )}
+      </View>
+
+      {/* 拷打 */}
+      <View className='result-roast'>
+        <Text className='roast-icon'>💀</Text>
+        <Text className='roast-text'>{roast}</Text>
+      </View>
+
+      {/* 画饼 */}
+      {hype && (
+        <View className='result-hype'>
+          <Text className='hype-icon'>🎯</Text>
+          <Text className='hype-text'>{hype}</Text>
+        </View>
+      )}
+
+      {/* 行动指引 */}
+      {action && (
+        <View className='result-action'>
+          <Text className='action-label'>下一步：</Text>
+          <Text className='action-text'>{action}</Text>
+        </View>
+      )}
+
+      {/* 维度环形图 */}
+      <View className='dimension-section'>
+        <Text className='dimension-title'>跑步人格构成</Text>
+        <View className='donut-wrap'>
+          <View className='donut-chart'>
+            {donutSegments.map((seg, i) => {
+              // 简化：用横条替代SVG环形图（小程序Canvas/SVG支持有限）
+              return (
+                <View key={seg.dim} className='dim-bar-row'>
+                  <Text className='dim-label'>{DIMENSION_LABELS[seg.dim] || seg.dim}</Text>
+                  <View className='dim-bar-bg'>
+                    <View
+                      className='dim-bar-fill'
+                      style={{
+                        width: `${Math.round(seg.pct)}%`,
+                        backgroundColor: seg.color,
+                      }}
+                    />
+                  </View>
+                  <Text className='dim-pct'>{Math.round(seg.pct)}%</Text>
+                </View>
+              )
+            })}
+          </View>
+        </View>
+        <Text className='dimension-hint'>
+          标签由{donutSegments.length}个维度共同塑造
+        </Text>
+      </View>
+
+      {/* CP匹配 */}
+      <View className='cp-section'>
+        <View className='cp-match-card best'>
+          <Text className='cp-match-label'>🏅 最合拍搭子</Text>
+          <View className='cp-match-header'>
+            {(() => {
+              const m = getTypeMeta(cpMatch.type)
+              return m.img ? <Image className='cp-avatar' src={characterImg(m.img)} mode='aspectFill' /> : null
+            })()}
+            <View className='cp-match-info'>
+              <Text className='cp-match-type best-text'>{cpMatch.type}</Text>
+              <Text className='cp-match-en'>{getTypeMeta(cpMatch.type).en}</Text>
+            </View>
+          </View>
+          <Text className='cp-match-desc'>{cpMatch.desc}</Text>
+          <Text className='cp-match-score best-score'>契合度 {cpMatch.score}%</Text>
+        </View>
+
+        <View className='cp-match-card worst'>
+          <Text className='cp-match-label worst-label'>💀 最合不来搭子</Text>
+          <View className='cp-match-header'>
+            {(() => {
+              const m = getTypeMeta(worstCpMatch.type)
+              return m.img ? <Image className='cp-avatar' src={characterImg(m.img)} mode='aspectFill' /> : null
+            })()}
+            <View className='cp-match-info'>
+              <Text className='cp-match-type worst-text'>{worstCpMatch.type}</Text>
+              <Text className='cp-match-en'>{getTypeMeta(worstCpMatch.type).en}</Text>
+            </View>
+          </View>
+          <Text className='cp-match-desc'>{worstCpMatch.desc}</Text>
+          <Text className='cp-match-score worst-score'>冲突值 {worstCpMatch.score}%</Text>
+        </View>
+      </View>
+
+      {/* 比赛推荐 */}
+      {raceRecommendations.length > 0 && (
+        <View className='race-section'>
+          <Text className='race-section-title'>📍 推荐比赛</Text>
+          {raceRecommendations.map((race, idx) => (
+            <View key={idx} className='race-card'>
+              <View className='race-card-header'>
+                <Text className='race-name'>{race.name}</Text>
+                <Text className='race-distance'>{race.distance}</Text>
+              </View>
+              <View className='race-tags'>
+                {race.tags.map((tag, i) => (
+                  <Text key={i} className='race-tag'>{tag}</Text>
+                ))}
+              </View>
+              <View className='race-scores'>
+                <Text className='race-score-item'>难度 {renderStars(race.difficulty)}</Text>
+                <Text className='race-score-item'>风景 {renderStars(race.scenery)}</Text>
+                <Text className='race-score-item'>补给 {renderStars(race.supplies)}</Text>
+                <Text className='race-score-item'>文化 {renderStars(race.culture)}</Text>
+              </View>
+            </View>
+          ))}
+        </View>
+      )}
+
+      {/* 操作按钮 */}
+      <View className='result-actions'>
+        <Button className='result-btn-primary' openType='share'>
+          📤 分享给跑友
+        </Button>
+        <Button className='result-btn-secondary' onClick={resetQuiz}>
+          重新测试
+        </Button>
+      </View>
+    </View>
+  )
+}

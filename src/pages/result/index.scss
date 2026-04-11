@@ -1,0 +1,514 @@
+.result-screen {
+  min-height: 100vh;
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.result-badge {
+  background: #E63946;
+  color: white;
+  font-size: 24px;
+  padding: 12px 32px;
+  border-radius: 40px;
+  margin-bottom: 48px;
+}
+
+/* 英雄区 */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 56px;
+  padding: 0 32px;
+}
+
+.hero-avatar {
+  width: 480rpx;
+  height: 480rpx;
+  border-radius: 48rpx;
+  border: 8rpx solid #E63946;
+  margin-bottom: 32rpx;
+}
+
+.result-name {
+  font-size: 26px;
+  color: #6B7280;
+  letter-spacing: 4px;
+  margin-bottom: 12px;
+}
+
+.hero-type {
+  font-size: 72px;
+  font-weight: 800;
+  color: #1D1D1D;
+  letter-spacing: 6px;
+  line-height: 1.2;
+}
+
+.hero-type-en {
+  font-size: 30px;
+  font-weight: 600;
+  color: #6B7280;
+  letter-spacing: 2px;
+  margin-top: 4px;
+}
+
+.hero-tagline {
+  font-size: 28px;
+  color: #E63946;
+  font-weight: 500;
+  margin-top: 16px;
+  letter-spacing: 1px;
+}
+
+.hero-eggs {
+  font-size: 48px;
+  margin-top: 16px;
+}
+
+/* 拷打区 */
+.result-roast {
+  background: linear-gradient(135deg, #2D2D2D, #1D1D1D);
+  border-radius: 32px;
+  padding: 40px 48px;
+  margin: 0 32px 32px;
+  width: calc(100% - 64px);
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.roast-icon {
+  font-size: 48px;
+  flex-shrink: 0;
+}
+
+.roast-text {
+  font-size: 28px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+  flex: 1;
+}
+
+/* 画饼区 */
+.result-hype {
+  background: linear-gradient(135deg, #E63946, #C1121F);
+  border-radius: 32px;
+  padding: 32px 40px;
+  margin: 0 32px 32px;
+  width: calc(100% - 64px);
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.hype-icon {
+  font-size: 40px;
+  flex-shrink: 0;
+}
+
+.hype-text {
+  font-size: 28px;
+  line-height: 1.6;
+  color: white;
+  font-weight: 500;
+  flex: 1;
+}
+
+/* 行动指引 */
+.result-action {
+  background: rgba(244, 162, 97, 0.15);
+  border: 2px solid rgba(244, 162, 97, 0.3);
+  border-radius: 24px;
+  padding: 24px 32px;
+  margin: 0 32px 32px;
+  width: calc(100% - 64px);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.action-label {
+  font-size: 24px;
+  color: #F4A261;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.action-text {
+  font-size: 26px;
+  color: #2B2B2B;
+  line-height: 1.5;
+  flex: 1;
+}
+
+/* 维度 */
+.dimension-section {
+  width: calc(100% - 64px);
+  margin: 0 32px 40px;
+  background: white;
+  border-radius: 32px;
+  padding: 40px;
+}
+
+.dimension-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #6B7280;
+  letter-spacing: 4px;
+  margin-bottom: 32px;
+}
+
+.donut-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dim-bar-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.dim-label {
+  font-size: 26px;
+  color: #2B2B2B;
+  width: 140px;
+  flex-shrink: 0;
+}
+
+.dim-bar-bg {
+  flex: 1;
+  height: 16px;
+  background: #F3F4F6;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.dim-bar-fill {
+  height: 100%;
+  border-radius: 8px;
+}
+
+.dim-pct {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2B2B2B;
+  width: 80px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.dimension-hint {
+  font-size: 24px;
+  color: #6B7280;
+  margin-top: 32px;
+  text-align: center;
+}
+
+/* CP匹配 */
+.cp-section {
+  width: calc(100% - 64px);
+  margin: 0 32px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.cp-match-card {
+  border-radius: 32px;
+  padding: 32px 40px;
+}
+
+.cp-match-card.best {
+  background: linear-gradient(135deg, #F0FDF4, #DCFCE7);
+  border: 2px solid #86EFAC;
+}
+
+.cp-match-card.worst {
+  background: linear-gradient(135deg, #FEF2F2, #FEE2E2);
+  border: 2px solid #FCA5A5;
+}
+
+.cp-match-label {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+  color: #16A34A;
+}
+
+.worst-label {
+  color: #E63946;
+}
+
+.cp-match-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 12px;
+}
+
+.cp-avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+}
+
+.best .cp-avatar {
+  border: 4px solid #86EFAC;
+}
+
+.worst .cp-avatar {
+  border: 4px solid #FCA5A5;
+}
+
+.cp-match-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cp-match-type {
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.best-text { color: #15803D; }
+.worst-text { color: #B91C1C; }
+
+.cp-match-en {
+  font-size: 22px;
+  color: #9CA3AF;
+}
+
+.cp-match-desc {
+  font-size: 26px;
+  color: #2B2B2B;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.cp-match-score {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.best-score { color: #16A34A; }
+.worst-score { color: #B91C1C; }
+
+/* 比赛推荐 */
+.race-section {
+  width: calc(100% - 64px);
+  margin: 0 32px 40px;
+}
+
+.race-section-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #2B2B2B;
+  margin-bottom: 24px;
+}
+
+.race-card {
+  background: white;
+  border: 2px solid #E5E7EB;
+  border-radius: 28px;
+  padding: 28px 32px;
+  margin-bottom: 20px;
+}
+
+.race-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.race-name {
+  font-size: 30px;
+  font-weight: 700;
+  color: #2B2B2B;
+}
+
+.race-distance {
+  font-size: 24px;
+  font-weight: 600;
+  color: #E63946;
+  background: rgba(230, 57, 70, 0.08);
+  padding: 4px 16px;
+  border-radius: 20px;
+}
+
+.race-tags {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.race-tag {
+  font-size: 22px;
+  color: #6B7280;
+  background: #F3F4F6;
+  padding: 4px 16px;
+  border-radius: 16px;
+}
+
+.race-scores {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 32px;
+}
+
+.race-score-item {
+  font-size: 24px;
+  color: #2B2B2B;
+}
+
+/* 操作按钮 */
+.result-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: calc(100% - 64px);
+  padding: 0 32px;
+  margin-bottom: 60px;
+}
+
+.result-btn-primary {
+  background: #E63946;
+  color: white;
+  border: none;
+  padding: 32px;
+  font-size: 32px;
+  font-weight: 600;
+  border-radius: 100px;
+  text-align: center;
+  line-height: 1;
+}
+
+.result-btn-primary::after {
+  border: none;
+}
+
+.result-btn-secondary {
+  background: white;
+  color: #2B2B2B;
+  border: 4px solid #E5E7EB;
+  padding: 28px;
+  font-size: 30px;
+  font-weight: 500;
+  border-radius: 100px;
+  line-height: 1;
+}
+
+.result-btn-secondary::after {
+  border: none;
+}
+
+/* 隐藏模式 */
+.hidden-mode {
+  background: linear-gradient(180deg, #2D1B69, #1D1D1D);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.hidden-mode .result-badge {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.hidden-mode .hero-type {
+  color: white;
+}
+
+.hidden-mode .hero-type-en {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.hidden-mode .hero-tagline {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.hidden-mode .result-name {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.hidden-mode .hero-avatar {
+  border-color: #7B2CBF;
+}
+
+.hidden-mode .result-action {
+  background: rgba(123, 44, 191, 0.15);
+  border-color: rgba(123, 44, 191, 0.3);
+}
+
+.hidden-mode .action-text {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.hidden-mode .dimension-section {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.hidden-mode .dimension-title {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.hidden-mode .dim-label,
+.hidden-mode .dim-pct {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.hidden-mode .dimension-hint {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.hidden-mode .cp-match-card.best {
+  background: linear-gradient(135deg, rgba(134, 239, 172, 0.1), rgba(134, 239, 172, 0.05));
+  border-color: rgba(134, 239, 172, 0.3);
+}
+
+.hidden-mode .cp-match-card.worst {
+  background: linear-gradient(135deg, rgba(252, 165, 165, 0.1), rgba(252, 165, 165, 0.05));
+  border-color: rgba(252, 165, 165, 0.3);
+}
+
+.hidden-mode .cp-match-desc {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.hidden-mode .cp-match-en {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.hidden-mode .race-section-title {
+  color: white;
+}
+
+.hidden-mode .race-card {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.hidden-mode .race-name {
+  color: white;
+}
+
+.hidden-mode .race-tag {
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.hidden-mode .race-score-item {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.hidden-mode .result-btn-secondary {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
