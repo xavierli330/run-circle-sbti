@@ -90,3 +90,31 @@
   line-height: 1.6;
   color: #2B2B2B;
 }
+
+.question-phase {
+  font-size: 24px;
+  color: #94A3B8;
+  margin-top: 8px;
+}
+
+.question-body {
+  margin-bottom: 16px;
+}
+
+.soul-question {
+  padding: 24px;
+  margin: 20px 0;
+  background: rgba(139, 92, 246, 0.05);
+  border-left: 6px solid #8B5CF6;
+  border-radius: 8px;
+}
+
+.soul-badge {
+  display: inline-block;
+  font-size: 20px;
+  color: #8B5CF6;
+  background: rgba(139, 92, 246, 0.1);
+  padding: 4px 12px;
+  border-radius: 4px;
+  margin-top: 12px;
+}

@@ -1,15 +1,9 @@
 import { useState, useMemo } from 'react'
 import { View, Text, Image, Button } from '@tarojs/components'
 import Taro from '@tarojs/taro'
-import { getTypeMeta, getRaceRecommendations } from '@/lib/quiz'
+import { getTypeMeta, getRaceRecommendations, DIMENSION_LABELS } from '@/lib/quiz'
 import { characterImg } from '@/lib/config'
 import './index.scss'
-
-const DIMENSION_LABELS: Record<string, string> = {
-  A1: '跑步身份', A2: '赛道行为', A3: '装备执念',
-  A4: '灵魂深处', A5: '跑步哲学',
-  B1: '山野态度', B2: '补给策略', B3: '装备取舍', B4: '完赛心态',
-}
 
 const DIMENSION_COLORS: Record<string, string> = {
   A1: '#E63946', A2: '#F4A261', A3: '#2A9D8F',
@@ -25,9 +19,10 @@ export default function Result() {
     userName, runnerType, runnerTypeEn, runnerImg, tagline,
     eggSymbols, isHiddenType, dimensionScores,
     roast, hype, action, cpMatch, worstCpMatch,
+    verdict, profile, emoji, dominantDim, macroScores,
   } = result
 
-  // 维度环形图数据
+  // 维度条形图数据
   const donutSegments = useMemo(() => {
     const entries = Object.entries(dimensionScores || {}).filter(([_, s]: [string, number]) => s > 0)
     if (entries.length === 0) return []
@@ -54,19 +49,21 @@ export default function Result() {
     Taro.reLaunch({ url: '/pages/index/index' })
   }
 
-  // 分享
-  const onShareAppMessage = () => {
-    return {
-      title: `我是${runnerType}！测测你是哪种跑者`,
-      path: '/pages/index/index',
-      imageUrl: runnerImg ? characterImg(runnerImg) : '',
-    }
+  const onShareAppMessage = () => ({
+    title: `我是${runnerType}！测测你是哪种跑者`,
+    path: '/pages/index/index',
+    imageUrl: runnerImg ? characterImg(runnerImg) : '',
+  })
+
+  const copyShareText = () => {
+    const text = `我是${runnerType}！「${tagline}」\n${roast}\n测测你是哪种跑者 → 跑圈SBTI`
+    Taro.setClipboardData({ data: text })
   }
 
   const renderStars = (score: number) => '★'.repeat(score) + '☆'.repeat(5 - score)
 
   return (
-    <View className={`result-screen ${isHiddenType ? 'hidden-mode' : ''}`}>
+    <View className={`result-screen ${isHiddenType ? 'hidden-mode' : ''} theme-${dominantDim || 'drive'}`}>
       {/* badge */}
       <View className='result-badge'>
         <Text>{isHiddenType ? '🎉 隐藏人格解锁' : '🏁 测试完成'}</Text>
@@ -74,12 +71,9 @@ export default function Result() {
 
       {/* 英雄区 */}
       <View className='hero-section'>
+        {emoji && <Text className='hero-emoji'>{emoji}</Text>}
         {runnerImg && (
-          <Image
-            className='hero-avatar'
-            src={characterImg(runnerImg)}
-            mode='aspectFill'
-          />
+          <Image className='hero-avatar' src={characterImg(runnerImg)} mode='aspectFill' />
         )}
         {userName && <Text className='result-name'>{userName}</Text>}
         <Text className='hero-type'>{runnerType}</Text>
@@ -90,11 +84,31 @@ export default function Result() {
         )}
       </View>
 
+      {/* 人格解读 */}
+      {profile && (
+        <View className='result-profile'>
+          <Text className='profile-label'>人格解读</Text>
+          <Text className='profile-text'>{profile}</Text>
+        </View>
+      )}
+
       {/* 拷打 */}
       <View className='result-roast'>
         <Text className='roast-icon'>💀</Text>
         <Text className='roast-text'>{roast}</Text>
       </View>
+
+      {/* 判词 */}
+      {verdict && (
+        <View className='result-verdict'>
+          <Text className='verdict-label'>判定依据</Text>
+          <View className='verdict-tags'>
+            {verdict.split('；').map((clause: string, i: number) => (
+              <Text key={i} className='verdict-tag'>{clause}</Text>
+            ))}
+          </View>
+        </View>
+      )}
 
       {/* 画饼 */}
       {hype && (
@@ -112,29 +126,20 @@ export default function Result() {
         </View>
       )}
 
-      {/* 维度环形图 */}
+      {/* 维度条形图 */}
       <View className='dimension-section'>
         <Text className='dimension-title'>跑步人格构成</Text>
         <View className='donut-wrap'>
           <View className='donut-chart'>
-            {donutSegments.map((seg, i) => {
-              // 简化：用横条替代SVG环形图（小程序Canvas/SVG支持有限）
-              return (
-                <View key={seg.dim} className='dim-bar-row'>
-                  <Text className='dim-label'>{DIMENSION_LABELS[seg.dim] || seg.dim}</Text>
-                  <View className='dim-bar-bg'>
-                    <View
-                      className='dim-bar-fill'
-                      style={{
-                        width: `${Math.round(seg.pct)}%`,
-                        backgroundColor: seg.color,
-                      }}
-                    />
-                  </View>
-                  <Text className='dim-pct'>{Math.round(seg.pct)}%</Text>
+            {donutSegments.map((seg) => (
+              <View key={seg.dim} className='dim-bar-row'>
+                <Text className='dim-label'>{DIMENSION_LABELS[seg.dim] || seg.dim}</Text>
+                <View className='dim-bar-bg'>
+                  <View className='dim-bar-fill' style={{ width: `${Math.round(seg.pct)}%`, backgroundColor: seg.color }} />
                 </View>
-              )
-            })}
+                <Text className='dim-pct'>{Math.round(seg.pct)}%</Text>
+              </View>
+            ))}
           </View>
         </View>
         <Text className='dimension-hint'>
@@ -205,6 +210,9 @@ export default function Result() {
 
       {/* 操作按钮 */}
       <View className='result-actions'>
+        <Button className='result-btn-copy' onClick={copyShareText}>
+          复制文案
+        </Button>
         <Button className='result-btn-primary' openType='share'>
           📤 分享给跑友
         </Button>

@@ -512,3 +512,83 @@
   border-color: rgba(255, 255, 255, 0.2);
   color: white;
 }
+
+// emoji
+.hero-emoji {
+  font-size: 48px;
+  margin-bottom: 8px;
+}
+
+// profile section
+.result-profile {
+  margin: 24px;
+  padding: 24px;
+  background: #FFFFFF;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+.profile-label {
+  font-size: 24px;
+  color: #64748B;
+  margin-bottom: 12px;
+  display: block;
+}
+.profile-text {
+  font-size: 28px;
+  color: #1E293B;
+  line-height: 1.6;
+  display: block;
+}
+
+// verdict section
+.result-verdict {
+  margin: 24px;
+  padding: 24px;
+  background: #F8FAFC;
+  border-radius: 16px;
+  border: 1px solid #E2E8F0;
+}
+.verdict-label {
+  font-size: 24px;
+  color: #64748B;
+  margin-bottom: 12px;
+  display: block;
+}
+.verdict-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.verdict-tag {
+  font-size: 22px;
+  color: #7B2CBF;
+  background: rgba(123, 44, 191, 0.08);
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+// dominant dimension themes
+.theme-drive .hero-section {
+  background: linear-gradient(135deg, #FEE2E2, #FFFFFF);
+}
+.theme-social .hero-section {
+  background: linear-gradient(135deg, #FEF3C7, #FFFFFF);
+}
+.theme-obsession .hero-section {
+  background: linear-gradient(135deg, #F3E8FF, #FFFFFF);
+}
+.theme-wildness .hero-section {
+  background: linear-gradient(135deg, #CCFBF1, #FFFFFF);
+}
+
+// copy button
+.result-btn-copy {
+  width: 100%;
+  height: 88px;
+  font-size: 30px;
+  border-radius: 16px;
+  background: #F1F5F9;
+  color: #475569;
+  border: none;
+  margin-bottom: 16px;
+}
