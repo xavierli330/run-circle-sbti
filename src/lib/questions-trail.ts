@@ -505,4 +505,125 @@ export const trailQuestions: Question[] = [
       { label: 'D', text: '带更多人一起跑，让越野成为生活方式' },
     ]
   },
+  // ============ 新增抽象搞怪题 ============
+  {
+    id: 'B51', dimension: 'B1', isSoul: false,
+    text: '当你在第5个CP点看到西瓜、可乐、泡面三件套时，你会：',
+    options: [
+      { label: 'A', text: '坐下吃满15分钟，关门兔来了我也得加完这碗卤蛋' },
+      { label: 'B', text: '各尝一口，拍照发群，然后恋恋不舍地离开' },
+      { label: 'C', text: '只喝水，这种补给只会腐蚀我钢铁般的意志' },
+      { label: 'D', text: '把可乐倒进水袋带走，这就是战略储备' },
+    ]
+  },
+  {
+    id: 'B52', dimension: 'B1', isSoul: false,
+    text: '比赛当天突降暴雨，赛道变成泥浆蹦迪现场，你的第一反应是：',
+    options: [
+      { label: 'A', text: '肾上腺素狂飙，这种野的路才配得上我的HOKA' },
+      { label: 'B', text: '脑子里只有一个念头：能量胶会不会被泡烂' },
+      { label: 'C', text: '原地打开手表看实时海拔，计算DNF路线距离' },
+      { label: 'D', text: '一边骂主办方一边冲，骂得越狠跑得越快' },
+    ]
+  },
+  {
+    id: 'B53', dimension: 'B1', isSoul: false,
+    text: '夜跑到荒山野岭，水袋空了、能量胶没了、前不着村后不着店，你会：',
+    options: [
+      { label: 'A', text: '开始冥想，进入低功耗生存模式，靠意志力巡航' },
+      { label: 'B', text: '打开高德地图找最近便利店，越野跑的尽头是外卖' },
+      { label: 'C', text: '蹲在路边扒野果，生死有命，甜不甜看天意' },
+      { label: 'D', text: '翻出备份胶——真正的老炮永远有Plan C' },
+    ]
+  },
+  {
+    id: 'B54', dimension: 'B2', isSoul: false,
+    text: '关于强制装备，你的真实态度是：',
+    options: [
+      { label: 'A', text: '每一件都称重，超50克都是对我PB的犯罪' },
+      { label: 'B', text: '基础款摆拍，真出事了靠Salomon保命' },
+      { label: 'C', text: '不仅带齐，还带了保温毯×3，怕死第一名' },
+      { label: 'D', text: '强装检查员看我背包鼓成仓鼠，直接放行' },
+    ]
+  },
+  {
+    id: 'B55', dimension: 'B2', isSoul: false,
+    text: '你的越野鞋收藏现状是：',
+    options: [
+      { label: 'A', text: 'HOKA/Salomon/Altra各一双，按赛道硬度轮班' },
+      { label: 'B', text: '一双战靴穿了3000公里，底磨平了感情更深了' },
+      { label: 'C', text: '不懂鞋，盲搜「UTMB冠军同款」直接下单' },
+      { label: 'D', text: '鞋柜爆炸，但每场比赛还是穿那双最旧的' },
+    ]
+  },
+  {
+    id: 'B56', dimension: 'B2', isSoul: false,
+    text: '赛前团购买的头灯到了，打开发现亮度还不如手机手电筒，你会：',
+    options: [
+      { label: 'A', text: '连夜下单Fenix，头灯是夜跑者的第二个心脏' },
+      { label: 'B', text: '将就用，反正我夜路跑得少， mostly daytime' },
+      { label: 'C', text: '退货+写800字差评，让后来者少走弯路' },
+      { label: 'D', text: '直接挂两个，亮度不够数量来凑' },
+    ]
+  },
+  {
+    id: 'B57', dimension: 'B3', isSoul: false,
+    text: '面对一段70度绝望坡，你的内心OS是：',
+    options: [
+      { label: 'A', text: '手脚并用才是进化论的终极答案' },
+      { label: 'B', text: '打开两步路确认这不是导航抽风' },
+      { label: 'C', text: '数呼吸，数步数，数到山顶就冥想超度自己' },
+      { label: 'D', text: '掏出登山杖，开始表演《老人与山》' },
+    ]
+  },
+  {
+    id: 'B58', dimension: 'B3', isSoul: false,
+    text: '下坡时遇到乱石+落叶+疑似野猪道的技术路段，你会：',
+    options: [
+      { label: 'A', text: '重心压低，大开大合，相信自己膝盖的野性' },
+      { label: 'B', text: '减速到徒步配速，安全回家才是终点' },
+      { label: 'C', text: '边跑边骂赛道设计师，用愤怒换平衡' },
+      { label: 'D', text: '手机拍一段POV，摔了也算有素材' },
+    ]
+  },
+  {
+    id: 'B59', dimension: 'B3', isSoul: false,
+    text: '为了备战百公里，你的爬升训练日常是：',
+    options: [
+      { label: 'A', text: '每周刷两次楼梯，从1楼爬到30楼再爬下来' },
+      { label: 'B', text: '周末进山拉练，爬升2000米只是开胃菜' },
+      { label: 'C', text: '跑步机坡度15%走45分钟，假装自己在 Alps' },
+      { label: 'D', text: '不练，比赛当天靠肾上腺素和报应硬扛' },
+    ]
+  },
+  {
+    id: 'B60', dimension: 'B4', isSoul: false,
+    text: '冲线后摄影师拍下了你的完赛照，照片里的你：',
+    options: [
+      { label: 'A', text: '面带微笑竖起大拇指，像刚遛完公园' },
+      { label: 'B', text: '面目狰狞、四肢扭曲、号码布已飞到腰上' },
+      { label: 'C', text: '忙着发朋友圈，根本没看镜头' },
+      { label: 'D', text: '躺在终点线后面三米处，照片是志愿者俯拍的' },
+    ]
+  },
+  {
+    id: 'B61', dimension: 'B4', isSoul: false,
+    text: '赛后三天，你的社交动态状态是：',
+    options: [
+      { label: 'A', text: '九宫格风景+路线+奖牌，文案引用《瓦尔登湖》' },
+      { label: 'B', text: '只发一张膝盖淤青特写，配文「还活着」' },
+      { label: 'C', text: '连发7条短视频，BGM是《平凡之路》加速版' },
+      { label: 'D', text: '一条都没发，默默在跑群回复「下次不报了」' },
+    ]
+  },
+  {
+    id: 'B62', dimension: 'B4', isSoul: false,
+    text: '家人问你「跑这么久到底图什么」，你标准答案是：',
+    options: [
+      { label: 'A', text: '山里的风是免费的，我的快乐也是' },
+      { label: 'B', text: '为了朋友圈那几个赞，我付出了太多' },
+      { label: 'C', text: '图那一块完赛牌，可以当刮痧板用三年' },
+      { label: 'D', text: '沉默三秒，说「你不懂」，然后转身涂扶他林' },
+    ]
+  },
 ]
