@@ -38,6 +38,18 @@ export interface TagResult {
   action?: string
   cpMatch?: { type: string; desc: string; score: number }
   worstCpMatch?: { type: string; desc: string; score: number }
+  macroScores?: MacroScore
+  verdict?: string
+  dominantDim?: string
+  profile?: string
+  emoji?: string
+}
+
+export interface MacroScore {
+  drive: number
+  social: number
+  obsession: number
+  wildness: number
 }
 
 export interface EggTrigger {
