@@ -24,7 +24,7 @@ export const trailQuestions: Question[] = [
   },
   {
     id: 'B3', dimension: 'B1', isSoul: false,
-    text: '你对"自补给"怎么看？',
+    text: '你对「自补给」怎么看？',
     options: [
       { label: 'A', text: '精英选手的人设，我等凡人还是进站吧' },
       { label: 'B', text: '进站必吃撑，不然觉得对不起报名费' },
@@ -74,7 +74,7 @@ export const trailQuestions: Question[] = [
   },
   {
     id: 'B8', dimension: 'B1', isSoul: true,
-    text: '有人说"越野跑是跑给山看的"，你怎么看？',
+    text: '有人说「越野跑是跑给山看的」，你怎么看？',
     options: [
       { label: 'A', text: '山又看不懂，我是跑给自己看的' },
       { label: 'B', text: '山看完就忘，朋友圈记住才是真的' },
@@ -197,7 +197,7 @@ export const trailQuestions: Question[] = [
     id: 'B20', dimension: 'B2', isSoul: false,
     text: '你的运动相机（GoPro等）在跑步时会用吗？',
     options: [
-      { label: 'A', text: '经常用，记录每一个"生死时刻"' },
+      { label: 'A', text: '经常用，记录每一个「生死时刻」' },
       { label: 'B', text: '偶尔用，只在风景好的地方装一下' },
       { label: 'C', text: '不带，已经够累了，不想再背烧火棍' },
       { label: 'D', text: '有，但从来没在跑步时用过，当摆件了' },
@@ -276,11 +276,11 @@ export const trailQuestions: Question[] = [
   },
   {
     id: 'B28', dimension: 'B3', isSoul: true,
-    text: '你怎么看待"跑山"这个说法？',
+    text: '你怎么看待「跑山」这个说法？',
     options: [
       { label: 'A', text: '跑山是精髓，下山跑起来才是爽' },
       { label: 'B', text: '上山跑不了，下山还跑不了，那叫爬山' },
-      { label: 'C', text: '我更喜欢"走山"，走比跑更可持续' },
+      { label: 'C', text: '我更喜欢「走山」，走比跑更可持续' },
       { label: 'D', text: '跑到最后才发现，其实是在赶路' },
     ]
   },
@@ -326,7 +326,7 @@ export const trailQuestions: Question[] = [
   },
   {
     id: 'B33', dimension: 'B3', isSoul: false,
-    text: '你怎么看"爬山虎"（爬山很快的人）？',
+    text: '你怎么看「爬山虎」（爬山很快的人）？',
     options: [
       { label: 'A', text: '佩服，但我不跟他们比，我有我自己的节奏' },
       { label: 'B', text: '无感，上山快不代表下山也快' },
@@ -417,7 +417,7 @@ export const trailQuestions: Question[] = [
   },
   {
     id: 'B42', dimension: 'B4', isSoul: false,
-    text: '对"跑到一半停下来拍照"的跑者怎么看？',
+    text: '对「跑到一半停下来拍照」的跑者怎么看？',
     options: [
       { label: 'A', text: '理解，风景是越野跑的一部分' },
       { label: 'B', text: '觉得他们不专业，浪费时间' },

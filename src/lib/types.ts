@@ -38,7 +38,9 @@ export interface TagResult {
   action?: string
   cpMatch?: { type: string; desc: string; score: number }
   worstCpMatch?: { type: string; desc: string; score: number }
+  macroScores?: MacroScore
   verdict?: string
+  dominantDim?: string
 }
 
 export interface EggTrigger {
@@ -55,6 +57,13 @@ export interface ShareImageData {
   suitableRace: string
   isHidden: boolean
   eggSymbol?: string
+}
+
+export interface MacroScore {
+  drive: number      // 斗志: 卷 ↔ 躺
+  social: number     // 社交: 约跑 ↔ 独行
+  obsession: number  // 执念: 装备控 ↔ 随性
+  wildness: number   // 野性: 越野 ↔ 路跑
 }
 
 export interface RaceRecommendation {

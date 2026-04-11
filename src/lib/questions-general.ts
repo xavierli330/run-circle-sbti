@@ -6,8 +6,8 @@ export const generalQuestions: Question[] = [
     id: 'A1', dimension: 'A1', isSoul: false,
     text: '朋友问你在干什么，你通常怎么回答？',
     options: [
-      { label: 'A', text: '"我在跑步"（然后发一张跑步记录截图，精确到小数点后两位）' },
-      { label: 'B', text: '"跑步去了"（但实际上刚打开APP还没出门）' },
+      { label: 'A', text: '「我在跑步」（然后发一张跑步记录截图，精确到小数点后两位）' },
+      { label: 'B', text: '「跑步去了」（但实际上刚打开APP还没出门）' },
       { label: 'C', text: '忽略消息，等跑完再回复，假装刚才在忙' },
       { label: 'D', text: '直接发语音定位，实时播报进度，让对方感受我的痛苦' },
     ]
@@ -44,7 +44,7 @@ export const generalQuestions: Question[] = [
   },
   {
     id: 'A5', dimension: 'A1', isSoul: false,
-    text: '你对"坚持跑步"这件事怎么看？',
+    text: '你对「坚持跑步」这件事怎么看？',
     options: [
       { label: 'A', text: '跑步不需要坚持，它已经是我生活的一部分，像呼吸一样自然' },
       { label: 'B', text: '坚持是必须的，不跑满里程就觉得自己是个废物' },
@@ -54,7 +54,7 @@ export const generalQuestions: Question[] = [
   },
   {
     id: 'A6', dimension: 'A1', isSoul: false,
-    text: '有人说"跑步是一场跟自己的对话"，你怎么看？',
+    text: '有人说「跑步是一场跟自己的对话」，你怎么看？',
     options: [
       { label: 'A', text: '同意，跑步时确实能想通很多事情，对话质量很高' },
       { label: 'B', text: '不同意，我跑步时只想赶紧结束，对话对象是终点线' },
@@ -98,18 +98,18 @@ export const generalQuestions: Question[] = [
     options: [
       { label: 'A', text: '跑得慢但超级能说，赛道就是他的聊天室，占着路还聊得欢' },
       { label: 'B', text: '数据党，每次聊天都要报配速、报跑量，卷死别人' },
-      { label: 'C', text: '佛系装逼犯，嘴里说"我随便跑跑"，成绩出来比谁都认真' },
-      { label: 'D', text: '那些每次问"你跑步减肥了吗"的人，跑步不是为了减肥！' },
+      { label: 'C', text: '佛系装逼犯，嘴里说「我随便跑跑」，成绩出来比谁都认真' },
+      { label: 'D', text: '那些每次问「你跑步减肥了吗」的人，跑步不是为了减肥！' },
     ]
   },
   {
     id: 'A11', dimension: 'A1', isSoul: true,
-    text: '有人问你"你跑得很快吧"，你怎么回应？',
+    text: '有人问你「你跑得很快吧」，你怎么回应？',
     options: [
       { label: 'A', text: '甩出数据截图，配速、里程、完赛时间，一目了然' },
-      { label: 'B', text: '谦虚地说"还行吧"，但心里其实对自己的成绩很骄傲' },
+      { label: 'B', text: '谦虚地说「还行吧」，但心里其实对自己的成绩很骄傲' },
       { label: 'C', text: '说不快，然后解释一堆原因：最近没练/状态不好/天气太热' },
-      { label: 'D', text: '转移话题：\"你跑吗？\"然后听对方倾诉工作忙' },
+      { label: 'D', text: '转移话题：「你跑吗？」然后听对方倾诉工作忙' },
     ]
   },
   {
@@ -159,7 +159,7 @@ export const generalQuestions: Question[] = [
     options: [
       { label: 'A', text: '在起点热身区反复拉伸，同时盯着手表等GPS定位成功' },
       { label: 'B', text: '在厕所排队，已经排了25分钟了' },
-      { label: 'C', text: '在起点拱门前拍照，发一条"即将开跑"的朋友圈' },
+      { label: 'C', text: '在起点拱门前拍照，发一条「即将开跑」的朋友圈' },
       { label: 'D', text: '坐在地上发呆，已经进入了放空状态，脑子一片空白' },
     ]
   },
@@ -175,7 +175,7 @@ export const generalQuestions: Question[] = [
   },
   {
     id: 'A18', dimension: 'A2', isSoul: false,
-    text: '马拉松30公里后，你进入了传说中的"撞墙期"，这时候你会？',
+    text: '马拉松30公里后，你进入了传说中的「撞墙期」，这时候你会？',
     options: [
       { label: 'A', text: '用意志力硬抗，告诉自己再坚持一下就到了' },
       { label: 'B', text: '走走跑跑，但绝不停止，停止就意味着彻底放弃' },
@@ -406,7 +406,7 @@ export const generalQuestions: Question[] = [
   },
   {
     id: 'A41', dimension: 'A3', isSoul: false,
-    text: '你对于"赤脚跑"或者"极简跑"怎么看？',
+    text: '你对于「赤脚跑」或者「极简跑」怎么看？',
     options: [
       { label: 'A', text: '觉得很酷，但我不敢试，怕脚底中招' },
       { label: 'B', text: '试过一段时间，感觉回到了人类的原始跑步状态' },
@@ -446,7 +446,7 @@ export const generalQuestions: Question[] = [
   },
   {
     id: 'A45', dimension: 'A3', isSoul: false,
-    text: '你对"强制装备"怎么看？',
+    text: '你对「强制装备」怎么看？',
     options: [
       { label: 'A', text: '尊重规则，该带的必须带，这是对自己负责' },
       { label: 'B', text: '有些比赛的强制装备是摆设，背着沉重的装备跑才是最大的危险' },
@@ -501,7 +501,7 @@ export const generalQuestions: Question[] = [
     options: [
       { label: 'A', text: '500-800公里，鞋底磨损了就要换，不能将就' },
       { label: 'B', text: '穿到它散架为止，一双好鞋值得穿到最后一天' },
-      { label: 'C', text: '出了新款就想买，旧鞋还没坏就变成了"备用鞋"' },
+      { label: 'C', text: '出了新款就想买，旧鞋还没坏就变成了「备用鞋」' },
       { label: 'D', text: '没算过，反正坏了就扔' },
     ]
   },
@@ -581,7 +581,7 @@ export const generalQuestions: Question[] = [
     options: [
       { label: 'A', text: '无动于衷，每个人有每个人的配速' },
       { label: 'B', text: '加速跟一段，但很快就会放弃' },
-      { label: 'C', text: '默默把对方列入"下次要追上"名单' },
+      { label: 'C', text: '默默把对方列入「下次要追上」名单' },
       { label: 'D', text: '我是那个经常被别人超过的人，所以我能理解被超过的感觉' },
     ]
   },
