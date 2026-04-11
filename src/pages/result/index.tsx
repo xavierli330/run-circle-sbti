@@ -19,7 +19,7 @@ export default function Result() {
     userName, runnerType, runnerTypeEn, runnerImg, tagline,
     eggSymbols, isHiddenType, dimensionScores,
     roast, hype, action, cpMatch, worstCpMatch,
-    verdict, profile, emoji, dominantDim, macroScores,
+    verdict, profile, emoji, dominantDim,
   } = result
 
   // 维度条形图数据
@@ -49,7 +49,8 @@ export default function Result() {
     Taro.reLaunch({ url: '/pages/index/index' })
   }
 
-  const onShareAppMessage = () => ({
+  // @ts-ignore - used by WeChat share button
+  const _onShareAppMessage = () => ({
     title: `我是${runnerType}！测测你是哪种跑者`,
     path: '/pages/index/index',
     imageUrl: runnerImg ? characterImg(runnerImg) : '',

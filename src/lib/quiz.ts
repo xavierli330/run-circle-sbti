@@ -307,8 +307,8 @@ function shuffle<T>(arr: T[]): T[] {
   return a
 }
 
-// 按维度分组题目
-function groupByDimension(questions: Question[]) {
+// 按维度分组题目（保留供外部使用）
+export function groupByDimension(questions: Question[]) {
   const groups: Record<string, Question[]> = {}
   for (const q of questions) {
     if (!groups[q.dimension]) groups[q.dimension] = []
@@ -420,7 +420,7 @@ function checkSpecialOverrides(macro: MacroScore): string | null {
 }
 
 // 判定角色类型
-function determineRunnerType(answers: Answer[], dimensionScores: Record<string, number>): string {
+function determineRunnerType(_answers: Answer[], dimensionScores: Record<string, number>): string {
   const macro = calcMacroScores(dimensionScores)
 
   const jitter = () => Math.floor(Math.random() * 25) - 12
@@ -443,7 +443,7 @@ function determineRunnerType(answers: Answer[], dimensionScores: Record<string, 
 }
 
 // 生成判词
-function generateVerdict(answers: Answer[], runnerType: string, dimensionScores: Record<string, number>): string {
+function generateVerdict(answers: Answer[], _runnerType: string, dimensionScores: Record<string, number>): string {
   const macro = calcMacroScores(dimensionScores)
 
   // 隐藏人格特判
