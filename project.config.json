@@ -1,5 +1,6 @@
 {
   "miniprogramRoot": "dist/",
+  "cloudfunctionRoot": "cloud/",
   "projectname": "MoveBTI",
   "description": "运动BTI - 人格测试",
   "appid": "wx052ade6a6d3d13f4",
