@@ -1,0 +1,5438 @@
+[
+  {
+    "_id": "A1",
+    "dimension": "A1",
+    "category": "general",
+    "text": "朋友问你在干什么，你通常怎么回答？",
+    "options": [
+      {
+        "label": "A",
+        "text": "「我在跑步」（然后发一张跑步记录截图，精确到小数点后两位）"
+      },
+      {
+        "label": "B",
+        "text": "「跑步去了」（但实际上刚打开APP还没出门）"
+      },
+      {
+        "label": "C",
+        "text": "忽略消息，等跑完再回复，假装刚才在忙"
+      },
+      {
+        "label": "D",
+        "text": "直接发语音定位，实时播报进度，让对方感受我的痛苦"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A2",
+    "dimension": "A1",
+    "category": "general",
+    "text": "你发现自己被跑友拉进了一个「每天5公里打卡，否则发红包」的群，你的第一反应是？",
+    "options": [
+      {
+        "label": "A",
+        "text": "立刻设置5个闹钟，把跑步当成KPI来完成"
+      },
+      {
+        "label": "B",
+        "text": "默默潜水，等别人忘了我再退群，红包是不可能发的"
+      },
+      {
+        "label": "C",
+        "text": "每天发Keep截图充数，其实截图是网上搜的"
+      },
+      {
+        "label": "D",
+        "text": "反手把群主拉进「每天背100个单词」的群，互相伤害"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A3",
+    "dimension": "A1",
+    "category": "general",
+    "text": "跑步的时候，你的大脑通常在处理什么？",
+    "options": [
+      {
+        "label": "A",
+        "text": "计算离终点还有多少公里，顺便计算人生的意义"
+      },
+      {
+        "label": "B",
+        "text": "构思一篇还没动笔的旷世巨著，跑步只是背景音"
+      },
+      {
+        "label": "C",
+        "text": "脑子里一片空白，像死机的电脑，但腿还在自动运行"
+      },
+      {
+        "label": "D",
+        "text": "跟遇到的每一个人吵架，包括路边的树"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A4",
+    "dimension": "A2",
+    "category": "general",
+    "text": "如果跑步是一场游戏，你觉得自己现在是哪个阶段？",
+    "options": [
+      {
+        "label": "A",
+        "text": "新手村，刚出来的新手，连装备都没配齐"
+      },
+      {
+        "label": "B",
+        "text": "卡在某个等级很久了，升级速度比微信打字还慢"
+      },
+      {
+        "label": "C",
+        "text": "已经通关过一次，正在刷二周目找成就感"
+      },
+      {
+        "label": "D",
+        "text": "发现了游戏的bug，但我不打算反馈，准备用到死"
+      }
+    ],
+    "isSoul": true,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A5",
+    "dimension": "A1",
+    "category": "general",
+    "text": "如果跑步数据可以兑换成货币，以你目前的跑量，你的身价大概是？",
+    "options": [
+      {
+        "label": "A",
+        "text": "可以在二线城市付个首付，我的数据就是我的资产"
+      },
+      {
+        "label": "B",
+        "text": "刚好够买一双碳板鞋，然后继续跑继续换"
+      },
+      {
+        "label": "C",
+        "text": "只能买一碗兰州拉面加蛋，但汤可以免费续"
+      },
+      {
+        "label": "D",
+        "text": "负债，因为我大部分时间都在躺平，数据是负的"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A6",
+    "dimension": "A1",
+    "category": "general",
+    "text": "有人说「跑步是一场跟自己的对话」，你怎么看？",
+    "options": [
+      {
+        "label": "A",
+        "text": "同意，跑步时确实能想通很多事情，对话质量很高"
+      },
+      {
+        "label": "B",
+        "text": "不同意，我跑步时只想赶紧结束，对话对象是终点线"
+      },
+      {
+        "label": "C",
+        "text": "我跟自己的对话经常变成吵架，最后不欢而散"
+      },
+      {
+        "label": "D",
+        "text": "我觉得这句话很矫情，跑步就是跑步，想那么多干嘛"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A7",
+    "dimension": "A1",
+    "category": "general",
+    "text": "你会在朋友圈发跑步内容吗？",
+    "options": [
+      {
+        "label": "A",
+        "text": "每次跑完必发，图文必须精致，数据必须截图，滤镜必须到位"
+      },
+      {
+        "label": "B",
+        "text": "只发重要的——首马、破PB、或者精修过的完赛照"
+      },
+      {
+        "label": "C",
+        "text": "很少发，跑步是我自己的事，不需要表演"
+      },
+      {
+        "label": "D",
+        "text": "从来不发，我连朋友圈都关了，社交只会影响我跑步"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A8",
+    "dimension": "A1",
+    "category": "general",
+    "text": "跑步途中偶遇心动对象/前任/crush，你会？",
+    "options": [
+      {
+        "label": "A",
+        "text": "远远保持距离，等对方先发现我，假装很随意"
+      },
+      {
+        "label": "B",
+        "text": "慢慢跟在后面，找机会自然地搭个话"
+      },
+      {
+        "label": "C",
+        "text": "主动上去打招呼，顺便问一下你跑几公里"
+      },
+      {
+        "label": "D",
+        "text": "加速拉爆！让对方记住我的背影——心中只有配速，没有感情"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A9",
+    "dimension": "A1",
+    "category": "general",
+    "text": "你今天计划跑10公里，现在跑了9.87公里，你会？",
+    "options": [
+      {
+        "label": "A",
+        "text": "停下来，不跑了，今天就这样，9.87也很吉利"
+      },
+      {
+        "label": "B",
+        "text": "凑到10公里再停，哪怕是慢摇也要跑到整数"
+      },
+      {
+        "label": "C",
+        "text": "继续跑到10.01，谁还没点强迫症，但绝不多跑一步"
+      },
+      {
+        "label": "D",
+        "text": "看心情，反正手表会记录，出去就是胜利"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A10",
+    "dimension": "A1",
+    "category": "general",
+    "text": "跑圈里，你最讨厌哪种人？",
+    "options": [
+      {
+        "label": "A",
+        "text": "跑得慢但超级能说，赛道就是他的聊天室，占着路还聊得欢"
+      },
+      {
+        "label": "B",
+        "text": "数据党，每次聊天都要报配速、报跑量，卷死别人"
+      },
+      {
+        "label": "C",
+        "text": "佛系装逼犯，嘴里说「我随便跑跑」，成绩出来比谁都认真"
+      },
+      {
+        "label": "D",
+        "text": "那些每次问「你跑步减肥了吗」的人，跑步不是为了减肥！"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A11",
+    "dimension": "A1",
+    "category": "general",
+    "text": "有人问你「你跑得很快吧」，你怎么回应？",
+    "options": [
+      {
+        "label": "A",
+        "text": "甩出数据截图，配速、里程、完赛时间，一目了然"
+      },
+      {
+        "label": "B",
+        "text": "谦虚地说「还行吧」，但心里其实对自己的成绩很骄傲"
+      },
+      {
+        "label": "C",
+        "text": "说不快，然后解释一堆原因：最近没练/状态不好/天气太热"
+      },
+      {
+        "label": "D",
+        "text": "转移话题：「你跑吗？」然后听对方倾诉工作忙"
+      }
+    ],
+    "isSoul": true,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A12",
+    "dimension": "A1",
+    "category": "general",
+    "text": "群里有人发约跑链接，你会？",
+    "options": [
+      {
+        "label": "A",
+        "text": "看时间看地点看人数，都合适就去"
+      },
+      {
+        "label": "B",
+        "text": "看谁组织，不熟的人组织的就不去"
+      },
+      {
+        "label": "C",
+        "text": "从不参加约跑，一个人跑更自在"
+      },
+      {
+        "label": "D",
+        "text": "每次都去，但每次都是自己跑自己的"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A13",
+    "dimension": "A1",
+    "category": "general",
+    "text": "你更愿意跟什么样的人一起跑步？",
+    "options": [
+      {
+        "label": "A",
+        "text": "比我快的人，被带节奏的感觉很爽"
+      },
+      {
+        "label": "B",
+        "text": "比我慢的人，可以边跑边聊天不无聊"
+      },
+      {
+        "label": "C",
+        "text": "跟我差不多的人，配速相近，互相不尴尬"
+      },
+      {
+        "label": "D",
+        "text": "我一个人跑，跑步是独处的时光，不需要任何人"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A14",
+    "dimension": "A1",
+    "category": "general",
+    "text": "如果跑步被纳入高考科目，你觉得自己现在的水平能上什么大学？",
+    "options": [
+      {
+        "label": "A",
+        "text": "清华北大随便挑，我的PB就是保送通知书"
+      },
+      {
+        "label": "B",
+        "text": "211稳了，但985还需要再刷几个月跑量"
+      },
+      {
+        "label": "C",
+        "text": "二本保底，主要是作文分高（指朋友圈文案写得好）"
+      },
+      {
+        "label": "D",
+        "text": "蓝翔，因为我理论知识为零，只会躺着看直播"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A15",
+    "dimension": "A1",
+    "category": "general",
+    "text": "如果你可以给10年前的自己一条跑步建议，你会说什么？",
+    "options": [
+      {
+        "label": "A",
+        "text": "早点开始，别等到身体出问题才动起来"
+      },
+      {
+        "label": "B",
+        "text": "别买那么多装备，省下的钱够报二十场马拉松了"
+      },
+      {
+        "label": "C",
+        "text": "配速放慢一点，跑步是一辈子的事，不着急"
+      },
+      {
+        "label": "D",
+        "text": "记得享受跑步，不要忘记当初为什么开始"
+      }
+    ],
+    "isSoul": true,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A16",
+    "dimension": "A2",
+    "category": "general",
+    "text": "比赛开始前30分钟，你一般在做什么？",
+    "options": [
+      {
+        "label": "A",
+        "text": "在起点热身区反复拉伸，同时盯着手表等GPS定位成功"
+      },
+      {
+        "label": "B",
+        "text": "在厕所排队，已经排了25分钟了"
+      },
+      {
+        "label": "C",
+        "text": "在起点拱门前拍照，发一条「即将开跑」的朋友圈"
+      },
+      {
+        "label": "D",
+        "text": "坐在地上发呆，已经进入了放空状态，脑子一片空白"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A17",
+    "dimension": "A2",
+    "category": "general",
+    "text": "发令枪响了，你前5公里是什么状态？",
+    "options": [
+      {
+        "label": "A",
+        "text": "人挡杀人，佛挡杀佛，配速比平时快30秒，感觉要破纪录"
+      },
+      {
+        "label": "B",
+        "text": "压住速度，严格按照计划跑，告诉自己前半程要保守"
+      },
+      {
+        "label": "C",
+        "text": "找不到节奏，被各种人超，心里有点慌"
+      },
+      {
+        "label": "D",
+        "text": "在人群里穿梭，边跑边欣赏周围人的装备和表情"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A18",
+    "dimension": "A2",
+    "category": "general",
+    "text": "马拉松30公里后，你进入了传说中的「撞墙期」，这时候你会？",
+    "options": [
+      {
+        "label": "A",
+        "text": "用意志力硬抗，告诉自己再坚持一下就到了"
+      },
+      {
+        "label": "B",
+        "text": "走走跑跑，但绝不停止，停止就意味着彻底放弃"
+      },
+      {
+        "label": "C",
+        "text": "停下来拉伸，顺便吃点东西，走路也没什么丢人的"
+      },
+      {
+        "label": "D",
+        "text": "脑子里在想：下次再也不报全马了，人生还有很多更重要的事"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A19",
+    "dimension": "A2",
+    "category": "general",
+    "text": "比赛途中你误把志愿者的云南白药喷雾当成了运动饮料喝了一口，接下来5公里你会？",
+    "options": [
+      {
+        "label": "A",
+        "text": "感觉喉咙在喷火，但配速莫名提升，可能激活了隐藏属性"
+      },
+      {
+        "label": "B",
+        "text": "一边跑一边吐泡泡，成了赛道上一道独特的风景线"
+      },
+      {
+        "label": "C",
+        "text": "拉着志愿者一起跑，要求她对我负责到底"
+      },
+      {
+        "label": "D",
+        "text": "停下来拍个照发朋友圈：「今天的补给有点辣」"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A20",
+    "dimension": "A2",
+    "category": "general",
+    "text": "终点线前最后100米，你在想什么？",
+    "options": [
+      {
+        "label": "A",
+        "text": "加速！必须拼尽全力冲过去，哪怕抽筋也要帅"
+      },
+      {
+        "label": "B",
+        "text": "摆姿势，准备好表情，等着终点摄影师抓拍"
+      },
+      {
+        "label": "C",
+        "text": "终于到了，我可以发朋友圈了，计时钟是我的背景板"
+      },
+      {
+        "label": "D",
+        "text": "内心毫无波澜，甚至有点想笑，这只是又一个终点而已"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A21",
+    "dimension": "A2",
+    "category": "general",
+    "text": "你冲过终点线后，第一件事是做什么？",
+    "options": [
+      {
+        "label": "A",
+        "text": "立刻掏出手机，边走边发朋友圈，图文必须第一时间发出"
+      },
+      {
+        "label": "B",
+        "text": "找志愿者要完赛包，然后找个地方坐下，大口喘气"
+      },
+      {
+        "label": "C",
+        "text": "在终点拱门前拍倒计时姿势照片，奖牌必须挂在胸前"
+      },
+      {
+        "label": "D",
+        "text": "四处找冰可乐，完赛后的第一口可乐比任何补给品都重要"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A22",
+    "dimension": "A2",
+    "category": "general",
+    "text": "你跑步的时候，以下哪种情况最让你崩溃？",
+    "options": [
+      {
+        "label": "A",
+        "text": "跑到一半手机没电/手表没电，所有数据全部丢失"
+      },
+      {
+        "label": "B",
+        "text": "鞋带松开，必须停下来系，还打了死结"
+      },
+      {
+        "label": "C",
+        "text": "短裤磨腿，跑完发现大腿根红了一片"
+      },
+      {
+        "label": "D",
+        "text": "某个不可描述的部位被磨到怀疑人生，还不能抓"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A23",
+    "dimension": "A2",
+    "category": "general",
+    "text": "跑步跑到一半，你突然停下来，可能是因为：",
+    "options": [
+      {
+        "label": "A",
+        "text": "风景太好了，必须拍一张，哪怕只是路边的狗尾巴草"
+      },
+      {
+        "label": "B",
+        "text": "鞋里有石子/袜子歪了/手机要掉了"
+      },
+      {
+        "label": "C",
+        "text": "遇到了一只狗/猫，我停下来跟它对视"
+      },
+      {
+        "label": "D",
+        "text": "突然觉得跑步好无聊，我在干什么人生也在这样吗"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A24",
+    "dimension": "A5",
+    "category": "general",
+    "text": "如果你的跑步是一场电影，它现在处于：",
+    "options": [
+      {
+        "label": "A",
+        "text": "开场秀，热血开场，主人公刚开始接受训练"
+      },
+      {
+        "label": "B",
+        "text": "第三章，主角遇到了瓶颈期，正在挣扎"
+      },
+      {
+        "label": "C",
+        "text": "高潮前传，蓄力中，一切都在掌控中"
+      },
+      {
+        "label": "D",
+        "text": "彩蛋，负责搞笑的那个，跑完才发现连主角都不是"
+      }
+    ],
+    "isSoul": true,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A25",
+    "dimension": "A2",
+    "category": "general",
+    "text": "赛前你梦见自己到了起点，发现所有选手都穿着恐龙充气服，只有你是正常装备，你会？",
+    "options": [
+      {
+        "label": "A",
+        "text": "立刻在群里下单同款恐龙服，宁可热死也不能不合群"
+      },
+      {
+        "label": "B",
+        "text": "保持冷静，利用 aerodynamic advantage（气动优势）拉爆他们"
+      },
+      {
+        "label": "C",
+        "text": "假装自己是侏罗纪公园的管理员，边跑边喊「都别挤」"
+      },
+      {
+        "label": "D",
+        "text": "觉得这个梦太离谱了，决定今天不跑了，回家继续睡"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A26",
+    "dimension": "A4",
+    "category": "general",
+    "text": "比赛前一周，你的跑鞋突然开口说话，它对你说：",
+    "options": [
+      {
+        "label": "A",
+        "text": "「主人，我的碳板已经迫不及待想弹射你了。」"
+      },
+      {
+        "label": "B",
+        "text": "「求你了，这次别穿我去踩水坑，我上次感冒还没好。」"
+      },
+      {
+        "label": "C",
+        "text": "「其实我偷偷藏了上届选手的能量胶在鞋底，以备不时之需。」"
+      },
+      {
+        "label": "D",
+        "text": "「别跑了，跟我一起宅在鞋柜里看《甄嬛传》吧。」"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A27",
+    "dimension": "A4",
+    "category": "general",
+    "text": "比赛结束后的一周内，你会怎么安排跑步？",
+    "options": [
+      {
+        "label": "A",
+        "text": "彻底休息，一周都不跑，让身体完全恢复"
+      },
+      {
+        "label": "B",
+        "text": "慢跑2-3次，每次5公里以内，以放松为主"
+      },
+      {
+        "label": "C",
+        "text": "感觉状态出奇的好，第三天就开始正常训练了"
+      },
+      {
+        "label": "D",
+        "text": "说好要跑，但每天都有别的事，一直拖到下一场比赛报名"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A28",
+    "dimension": "A2",
+    "category": "general",
+    "text": "如果你跑步时必须带一件完全没用的东西，你会选？",
+    "options": [
+      {
+        "label": "A",
+        "text": "一只会叫的电子鸡，每跑一公里它就打鸣一次"
+      },
+      {
+        "label": "B",
+        "text": "一面小镜子，用来确认自己的跑步表情够不够痛苦面具"
+      },
+      {
+        "label": "C",
+        "text": "一本《五年高考三年模拟》，边跑边背文言文"
+      },
+      {
+        "label": "D",
+        "text": "一个空的行李箱，假装自己是在机场赶飞机的商务人士"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A29",
+    "dimension": "A2",
+    "category": "general",
+    "text": "跑步的时候，你一般听什么？",
+    "options": [
+      {
+        "label": "A",
+        "text": "音乐，电子的、动感的、节奏快的，跑步就是我的DJ时间"
+      },
+      {
+        "label": "B",
+        "text": "播客/有声书，利用跑步时间学习，卷死别人"
+      },
+      {
+        "label": "C",
+        "text": "不听任何东西，就听自己的呼吸和脚步声，这是我的冥想时间"
+      },
+      {
+        "label": "D",
+        "text": "什么都有可能，跑步APP的语音陪练、课程，偶尔也听音乐"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A30",
+    "dimension": "A5",
+    "category": "general",
+    "text": "你觉得你跑步的时候，是什么动物？",
+    "options": [
+      {
+        "label": "A",
+        "text": "豹子/猎豹，速度与激情，后程发力冲线"
+      },
+      {
+        "label": "B",
+        "text": "骆驼，稳健续航，不知道什么叫撞墙"
+      },
+      {
+        "label": "C",
+        "text": "狐狸，聪明且有策略，每个补给站都精打细算"
+      },
+      {
+        "label": "D",
+        "text": "蜗牛，慢慢悠悠，但一旦决定出发就会一直爬下去"
+      }
+    ],
+    "isSoul": true,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A31",
+    "dimension": "A3",
+    "category": "general",
+    "text": "如果你的运动手表成精了，它会怎么评价你？",
+    "options": [
+      {
+        "label": "A",
+        "text": "「他只有在VO2max涨了的时候才爱我。」"
+      },
+      {
+        "label": "B",
+        "text": "「我每天最大的工作量是帮他记录去便利店买烟的步数。」"
+      },
+      {
+        "label": "C",
+        "text": "「他跑步的时候心率都没看我的时候高。」"
+      },
+      {
+        "label": "D",
+        "text": "「我们之间是纯洁的充电关系，平时没什么交流。」"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A32",
+    "dimension": "A3",
+    "category": "general",
+    "text": "如果跑鞋可以像手机一样设置「勿扰模式」，你希望它能屏蔽什么？",
+    "options": [
+      {
+        "label": "A",
+        "text": "路边小吃摊的香味，每次跑到那里意志力就归零"
+      },
+      {
+        "label": "B",
+        "text": "陌生跑友的搭讪：「兄弟，你这鞋多少钱买的？」"
+      },
+      {
+        "label": "C",
+        "text": "洒水车的水雾，刚刷的鞋比我的心还凉"
+      },
+      {
+        "label": "D",
+        "text": "自己的脚臭，眼不见心不烦，鼻子不闻鞋不臭"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A33",
+    "dimension": "A3",
+    "category": "general",
+    "text": "你发现你的跑鞋在深夜偷偷打开了你的淘宝，购物车里多了三双限量款，你会？",
+    "options": [
+      {
+        "label": "A",
+        "text": "立刻下单，毕竟鞋比人更懂鞋，这叫专业对口"
+      },
+      {
+        "label": "B",
+        "text": "严肃教育它：「你现在还有800公里寿命，别想投胎。」"
+      },
+      {
+        "label": "C",
+        "text": "把购物车截图发朋友圈，配文「连我的鞋都想出轨」"
+      },
+      {
+        "label": "D",
+        "text": "假装没看见，等快递到了就说是鞋自己买的，跟我没关系"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A34",
+    "dimension": "A4",
+    "category": "general",
+    "text": "赛前一天晚上，你的准备工作是什么？",
+    "options": [
+      {
+        "label": "A",
+        "text": "装备全部摆好，照片拍好，参赛包整理好，定好三个闹钟"
+      },
+      {
+        "label": "B",
+        "text": "反复检查号码布有没有别好，芯片有没有绑好，手表充好电"
+      },
+      {
+        "label": "C",
+        "text": "强迫自己早点睡，但翻来覆去睡不着，脑子里全是赛道"
+      },
+      {
+        "label": "D",
+        "text": "跟平时一样，该干嘛干嘛，不做任何特殊准备"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A35",
+    "dimension": "A3",
+    "category": "general",
+    "text": "你的跑步衣柜里，最多的跑步装备是什么？",
+    "options": [
+      {
+        "label": "A",
+        "text": "跑步T恤，颜色和品牌都不一样，每件都有故事"
+      },
+      {
+        "label": "B",
+        "text": "压缩裤/紧身裤，各种长度各种品牌各一条"
+      },
+      {
+        "label": "C",
+        "text": "袜子，跑步袜比普通袜子的花费贵三倍"
+      },
+      {
+        "label": "D",
+        "text": "奖牌架，我的奖牌已经摆满了一面墙"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A36",
+    "dimension": "A3",
+    "category": "general",
+    "text": "你觉得跑步给你带来了什么？",
+    "options": [
+      {
+        "label": "A",
+        "text": "健康，身体指标的改善，这是最实际的"
+      },
+      {
+        "label": "B",
+        "text": "精神状态的变化，跑步让我更积极、更能抗压了"
+      },
+      {
+        "label": "C",
+        "text": "朋友圈和社交圈扩大了，认识了更多有趣的人"
+      },
+      {
+        "label": "D",
+        "text": "带来了一个TBW（to be worn）的奖牌架和一堆不会再穿的压缩袜"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A37",
+    "dimension": "A3",
+    "category": "general",
+    "text": "跑步发朋友圈，你通常什么时候发？",
+    "options": [
+      {
+        "label": "A",
+        "text": "跑完就发，趁热，数据最完整，滤镜最到位"
+      },
+      {
+        "label": "B",
+        "text": "等跑完休息一下，整理一下照片再发，品质优先"
+      },
+      {
+        "label": "C",
+        "text": "从不发朋友圈，我跑了就是跑了，不需要证明给谁看"
+      },
+      {
+        "label": "D",
+        "text": "专门挑比赛当天发，蹭热度，运气好能拿赞"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A38",
+    "dimension": "A3",
+    "category": "general",
+    "text": "你买过最值的跑步装备是什么？",
+    "options": [
+      {
+        "label": "A",
+        "text": "碳板跑鞋，穿上之后仿佛有了外挂"
+      },
+      {
+        "label": "B",
+        "text": "运动手表，数据让我更了解自己，也让我更焦虑"
+      },
+      {
+        "label": "C",
+        "text": "一副好的耳机，跑步不无聊了，人生都升华了"
+      },
+      {
+        "label": "D",
+        "text": "报名费，报名的那一刻我就已经赢了"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A39",
+    "dimension": "A3",
+    "category": "general",
+    "text": "你最不能接受自己的跑步装备出什么问题？",
+    "options": [
+      {
+        "label": "A",
+        "text": "鞋底磨平了还在穿，直到脚底起了水泡才意识到"
+      },
+      {
+        "label": "B",
+        "text": "手表没电/没GPS信号，导致数据不完整"
+      },
+      {
+        "label": "C",
+        "text": "短裤的兜太小，手机装不下，这个比赛体验大打折扣"
+      },
+      {
+        "label": "D",
+        "text": "空顶帽忘带了，头顶被晒得发烫，事后头皮屑暴增"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A40",
+    "dimension": "A3",
+    "category": "general",
+    "text": "如果你的奖牌架半夜活了，开始对着镜子练健美，它的动机最可能是？",
+    "options": [
+      {
+        "label": "A",
+        "text": "嫌自己的肌肉线条配不上你的完赛证书"
+      },
+      {
+        "label": "B",
+        "text": "准备跳槽去邻居家，因为那里的奖牌更重"
+      },
+      {
+        "label": "C",
+        "text": "想在你下次发朋友圈时，以一个更饱满的姿态入镜"
+      },
+      {
+        "label": "D",
+        "text": "它觉得自己承受的重量已经超越了人类的认知极限"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A41",
+    "dimension": "A3",
+    "category": "general",
+    "text": "你对于「赤脚跑」或者「极简跑」怎么看？",
+    "options": [
+      {
+        "label": "A",
+        "text": "觉得很酷，但我不敢试，怕脚底中招"
+      },
+      {
+        "label": "B",
+        "text": "试过一段时间，感觉回到了人类的原始跑步状态"
+      },
+      {
+        "label": "C",
+        "text": "我觉得这是玄学，跑步就是跑步，不需要搞那么多花样"
+      },
+      {
+        "label": "D",
+        "text": "看到有人赤脚跑我就会想报警，这不是跑步这是行为艺术"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A42",
+    "dimension": "A3",
+    "category": "general",
+    "text": "你更倾向于在线上跑还是线下跑？",
+    "options": [
+      {
+        "label": "A",
+        "text": "线下，赛道的气氛是不可替代的"
+      },
+      {
+        "label": "B",
+        "text": "线上，跑步不受时间地点限制，更自由"
+      },
+      {
+        "label": "C",
+        "text": "两者都要，线上用来训练，线下用来比赛和社交"
+      },
+      {
+        "label": "D",
+        "text": "我参加线上跑是为了奖牌，线下的太远了去不了"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A43",
+    "dimension": "A3",
+    "category": "general",
+    "text": "你的跑步装备中，哪一件是你跑得最久的？",
+    "options": [
+      {
+        "label": "A",
+        "text": "一双跑鞋，穿了两三年，鞋底都磨平了还在穿，有感情了"
+      },
+      {
+        "label": "B",
+        "text": "一件T恤，穿了无数次，洗到褪色了还在穿"
+      },
+      {
+        "label": "C",
+        "text": "一块手表，戴了很多年，数据比新欢还可靠"
+      },
+      {
+        "label": "D",
+        "text": "没有任何装备能在我这里待很久，喜新厌旧是常态"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A44",
+    "dimension": "A3",
+    "category": "general",
+    "text": "号码布在你眼里是什么？",
+    "options": [
+      {
+        "label": "A",
+        "text": "参赛的凭证，必须平整地别在胸前，不能折"
+      },
+      {
+        "label": "B",
+        "text": "完赛的证明，完赛后要拍照留念然后收好"
+      },
+      {
+        "label": "C",
+        "text": "擦汗巾，用完即抛，没那么多讲究"
+      },
+      {
+        "label": "D",
+        "text": "我有几块号码布，每块都记录了一场不想回忆但忘不掉的比赛"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A45",
+    "dimension": "A3",
+    "category": "general",
+    "text": "你对「强制装备」怎么看？",
+    "options": [
+      {
+        "label": "A",
+        "text": "尊重规则，该带的必须带，这是对自己负责"
+      },
+      {
+        "label": "B",
+        "text": "有些比赛的强制装备是摆设，背着沉重的装备跑才是最大的危险"
+      },
+      {
+        "label": "C",
+        "text": "我会多带一些，超出强制装备清单的范围，以备不时之需"
+      },
+      {
+        "label": "D",
+        "text": "强制装备检查是比赛的一部分，作弊的人早晚会在山上付出代价"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A46",
+    "dimension": "A4",
+    "category": "general",
+    "text": "赛前一周，你的肠胃突然开始用微信跟你对话，它说：",
+    "options": [
+      {
+        "label": "A",
+        "text": "「兄弟，别再吃火锅了，我已经在准备赛道上的叛变了。」"
+      },
+      {
+        "label": "B",
+        "text": "「给我来点干净的碳水，否则30公里后让你社会性死亡。」"
+      },
+      {
+        "label": "C",
+        "text": "「其实我想吃炸鸡，你跑你的，我消化我的，互不干涉。」"
+      },
+      {
+        "label": "D",
+        "text": "「无所谓，我已经习惯了，反正你每次都不听我的。」"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A47",
+    "dimension": "A4",
+    "category": "general",
+    "text": "比赛当天早上，你发现自己的号码布被家里的猫抓成了流苏状，你会？",
+    "options": [
+      {
+        "label": "A",
+        "text": "立刻找胶带把它粘成行为艺术品，相信组委会会欣赏"
+      },
+      {
+        "label": "B",
+        "text": "把猫也带上，说这是你的私补团队和情感支持动物"
+      },
+      {
+        "label": "C",
+        "text": "在群里发照片求安慰，顺便收获一波「哈哈哈」"
+      },
+      {
+        "label": "D",
+        "text": "佛系参赛，告诉志愿者「这是限量版战损皮肤」"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A48",
+    "dimension": "A4",
+    "category": "general",
+    "text": "完赛后的第一顿正餐，你一般吃什么？",
+    "options": [
+      {
+        "label": "A",
+        "text": "烧烤/火锅，大口吃肉，把跑步消耗的全补回来"
+      },
+      {
+        "label": "B",
+        "text": "拉面/米粉，清淡为主，让肠胃慢慢恢复"
+      },
+      {
+        "label": "C",
+        "text": "什么都不想吃，只想喝可乐和睡觉"
+      },
+      {
+        "label": "D",
+        "text": "随便吃，已经饿过头了，吃什么都不香"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A49",
+    "dimension": "A4",
+    "category": "general",
+    "text": "比赛结束后，你的双腿开通了一个播客节目，第一期的主题是：",
+    "options": [
+      {
+        "label": "A",
+        "text": "《主人的意志力：是真实存在还是集体幻觉？》"
+      },
+      {
+        "label": "B",
+        "text": "《论楼梯和马桶在赛后48小时内的恐怖统治》"
+      },
+      {
+        "label": "C",
+        "text": "「其实我一点都不累，我只是假装酸痛来博取同情。」"
+      },
+      {
+        "label": "D",
+        "text": "《什么时候去按摩？在线等，很急。》"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A50",
+    "dimension": "A3",
+    "category": "general",
+    "text": "如果你必须选一件装备作为你的「跑步守护神」，你会选？",
+    "options": [
+      {
+        "label": "A",
+        "text": "永远有电的运动手表，它是你在赛道上唯一的信仰"
+      },
+      {
+        "label": "B",
+        "text": "一条不会磨裆的压缩裤，它是你长距离路上的真菩萨"
+      },
+      {
+        "label": "C",
+        "text": "一顶会自动遮阳的空顶帽，科幻但实用"
+      },
+      {
+        "label": "D",
+        "text": "一个会说话的腰包，专门负责在撞墙期骂醒你"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A51",
+    "dimension": "A4",
+    "category": "general",
+    "text": "如果完赛后的拉伸动作被拍下来发到网上，网友最可能给你的弹幕是：",
+    "options": [
+      {
+        "label": "A",
+        "text": "「这不是拉伸，这是在表演丧尸出笼。」"
+      },
+      {
+        "label": "B",
+        "text": "「建议送去《我是歌手》，这呻吟比歌词还动人。」"
+      },
+      {
+        "label": "C",
+        "text": "「泡沫轴：我承受了这个年纪不该承受的压力。」"
+      },
+      {
+        "label": "D",
+        "text": "「别拉了，直接火化吧，看着都疼。」"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A52",
+    "dimension": "A4",
+    "category": "general",
+    "text": "你有没有因为跑步而影响过正常工作/生活？",
+    "options": [
+      {
+        "label": "A",
+        "text": "有，跑步占用了我大量的时间，经常需要调整工作安排"
+      },
+      {
+        "label": "B",
+        "text": "有，跑步让我经常迟到，因为长距离跑完就没时间洗澡了"
+      },
+      {
+        "label": "C",
+        "text": "没有，跑步让我的效率更高了，工作生活反而更充实"
+      },
+      {
+        "label": "D",
+        "text": "有，但我觉得值得，工作可以重来，全马一辈子没几次"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A53",
+    "dimension": "A4",
+    "category": "general",
+    "text": "跑步时，你总觉得路边某样东西在偷偷看你，最可能是？",
+    "options": [
+      {
+        "label": "A",
+        "text": "共享单车的座椅，它在嘲笑你「有腿为什么不骑」"
+      },
+      {
+        "label": "B",
+        "text": "垃圾桶，它在评估你丢的能量胶包装是不是可回收"
+      },
+      {
+        "label": "C",
+        "text": "红绿灯，它故意在你快到的时候变红，专门搞你心态"
+      },
+      {
+        "label": "D",
+        "text": "路边的狗，它的眼神说明了一切：「这人跑得还没我快」"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A54",
+    "dimension": "A4",
+    "category": "general",
+    "text": "跑步时遇到的最尴尬的事是什么？",
+    "options": [
+      {
+        "label": "A",
+        "text": "跑到一半抽筋，被人围观"
+      },
+      {
+        "label": "B",
+        "text": "短裤太透，看到了一个不该看到的轮廓"
+      },
+      {
+        "label": "C",
+        "text": "跑完了才发现号码布别反了"
+      },
+      {
+        "label": "D",
+        "text": "在路上遇到前任，还没来得及反应就错过去了"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A55",
+    "dimension": "A4",
+    "category": "general",
+    "text": "跑团约跑，有人一边跑一边聊天，你的反应是？",
+    "options": [
+      {
+        "label": "A",
+        "text": "跟着聊，跑量不重要，开心最重要"
+      },
+      {
+        "label": "B",
+        "text": "聊可以，但别拖慢我的配速，这是底线"
+      },
+      {
+        "label": "C",
+        "text": "我是来跑步的，不是来社交的，下次不来了"
+      },
+      {
+        "label": "D",
+        "text": "正好，跟上聊天节奏，顺便当作间歇训练"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A56",
+    "dimension": "A4",
+    "category": "general",
+    "text": "30公里撞墙期，你脑子里在想什么？",
+    "options": [
+      {
+        "label": "A",
+        "text": "我是谁我在哪我为什么要跑马拉松"
+      },
+      {
+        "label": "B",
+        "text": "快点结束吧，求求了，让我走路也行"
+      },
+      {
+        "label": "C",
+        "text": "掐自己继续跑，不能走，走了就输了"
+      },
+      {
+        "label": "D",
+        "text": "想到完赛后吃什么，瞬间满血复活"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A57",
+    "dimension": "A4",
+    "category": "general",
+    "text": "如果你跑步时鞋带必须每公里自动松开一次，你会怎么办？",
+    "options": [
+      {
+        "label": "A",
+        "text": "发明一种「永不松开鞋带」的系法，并申请专利"
+      },
+      {
+        "label": "B",
+        "text": "把它当作间歇训练的休息信号，系鞋带就是组间休息"
+      },
+      {
+        "label": "C",
+        "text": "干脆穿一脚蹬，向命运低头"
+      },
+      {
+        "label": "D",
+        "text": "边跑边骂鞋带，把它当成前任来发泄"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A58",
+    "dimension": "A4",
+    "category": "general",
+    "text": "比赛中有人超过你，你通常会怎么做？",
+    "options": [
+      {
+        "label": "A",
+        "text": "无动于衷，每个人有每个人的配速"
+      },
+      {
+        "label": "B",
+        "text": "加速跟一段，但很快就会放弃"
+      },
+      {
+        "label": "C",
+        "text": "默默把对方列入「下次要追上」名单"
+      },
+      {
+        "label": "D",
+        "text": "我是那个经常被别人超过的人，所以我能理解被超过的感觉"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A59",
+    "dimension": "A4",
+    "category": "general",
+    "text": "你最想跑的一场马拉松/比赛是什么？",
+    "options": [
+      {
+        "label": "A",
+        "text": "波士顿马拉松，跑步者心中的圣殿"
+      },
+      {
+        "label": "B",
+        "text": "UTMB，终极殿堂，越野跑者的终极目标"
+      },
+      {
+        "label": "C",
+        "text": "柏林马拉松，世界纪录诞生地，想体验那种赛道"
+      },
+      {
+        "label": "D",
+        "text": "下一场我已经报名的比赛"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A60",
+    "dimension": "A4",
+    "category": "general",
+    "text": "如果不跑步了，你会用什么来替代？",
+    "options": [
+      {
+        "label": "A",
+        "text": "游泳，对关节更友好"
+      },
+      {
+        "label": "B",
+        "text": "健身，力量训练也是一种修行"
+      },
+      {
+        "label": "C",
+        "text": "什么都不替代，跑步就是跑步，不需要替代"
+      },
+      {
+        "label": "D",
+        "text": "躺平，这才是终极的健康生活方式"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A61",
+    "dimension": "A5",
+    "category": "general",
+    "text": "你的跑鞋突然开口说话，它对你说什么？",
+    "options": [
+      {
+        "label": "A",
+        "text": "「放过我吧，你已经三个月没给我洗澡了。」"
+      },
+      {
+        "label": "B",
+        "text": "「前面那个人踩屎了，不是我，是他。」"
+      },
+      {
+        "label": "C",
+        "text": "「别装了，我知道你今天只打算跑三公里。」"
+      },
+      {
+        "label": "D",
+        "text": "「我其实很羡慕那双碳板鞋，虽然它连100公里都没跑满。」"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A62",
+    "dimension": "A5",
+    "category": "general",
+    "text": "如果跑步是一场葬礼，你希望终点线摆着什么？",
+    "options": [
+      {
+        "label": "A",
+        "text": "一面写满PB的光鲜PB墙，供后人瞻仰"
+      },
+      {
+        "label": "B",
+        "text": "一张空白的号码布，代表我无数次报名但没中签的人生"
+      },
+      {
+        "label": "C",
+        "text": "免费的冰可乐和西瓜，来宾边吃边吐槽我跑姿难看"
+      },
+      {
+        "label": "D",
+        "text": "一个心率带花圈，「愿天堂没有乳酸阈」。"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A63",
+    "dimension": "A5",
+    "category": "general",
+    "text": "你的Garmin数据飘到了平行宇宙，它在那里过着怎样的生活？",
+    "options": [
+      {
+        "label": "A",
+        "text": "成了当地的神话：一个每天跑30公里、心率永远136的传奇"
+      },
+      {
+        "label": "B",
+        "text": "被外星人研究，结论是人类是一种靠自我欺骗存活的动物"
+      },
+      {
+        "label": "C",
+        "text": "找到了真爱——一块松拓表，它们互相嘲笑对方的APP界面"
+      },
+      {
+        "label": "D",
+        "text": "失业了，因为那个宇宙的生物根本不运动，练一歇七"
+      }
+    ],
+    "isSoul": true,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A64",
+    "dimension": "A5",
+    "category": "general",
+    "text": "能量胶成精了，半夜给你发了一条微信，内容是什么？",
+    "options": [
+      {
+        "label": "A",
+        "text": "「兄弟，又失眠了？来一口，哥甜的。」"
+      },
+      {
+        "label": "B",
+        "text": "「别再把我放过期了，上次你以为我在35公里救了你，其实我过期了。」"
+      },
+      {
+        "label": "C",
+        "text": "「今天赛道见，希望你在能让我发挥作用的时候想起我。」"
+      },
+      {
+        "label": "D",
+        "text": "「是不是又在看装备了？有那钱不如多囤几盒我。」"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A65",
+    "dimension": "A5",
+    "category": "general",
+    "text": "你在赛道上捡到了一本 racers 的日记，最后一页写着：",
+    "options": [
+      {
+        "label": "A",
+        "text": "「第47场马拉松，我终于明白，终点线只是另一条起跑线。」"
+      },
+      {
+        "label": "B",
+        "text": "「今天没PB，但也没人认识我，所以没关系。」"
+      },
+      {
+        "label": "C",
+        "text": "「补给站的香蕉是我吃过最好吃的，活着真好。」"
+      },
+      {
+        "label": "D",
+        "text": "「前面那个人放了一个屁，我跟风跑了三公里，这可能是我的战术巅峰。」"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A66",
+    "dimension": "A5",
+    "category": "general",
+    "text": "深夜，你的奖牌架活了，它对着镜子说了一句话：",
+    "options": [
+      {
+        "label": "A",
+        "text": "「这些金属片很轻，但你把它们挂在我脖子上的时候，我觉得喘不过气。」"
+      },
+      {
+        "label": "B",
+        "text": "「左边第三块奖牌的主人，完赛后哭了。不是感动，是抽筋。」"
+      },
+      {
+        "label": "C",
+        "text": "「别再添新成员了，架子快塌了，就像你的膝盖一样。」"
+      },
+      {
+        "label": "D",
+        "text": "「我觉得我很虚荣，但我猜这正是你想要的一切。」"
+      }
+    ],
+    "isSoul": true,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A67",
+    "dimension": "A5",
+    "category": "general",
+    "text": "你发了一条仅自己可见的朋友圈：「跑步教会了我________。」",
+    "options": [
+      {
+        "label": "A",
+        "text": "人生是场马拉松，但我是那个38公里才想起喝水的人"
+      },
+      {
+        "label": "B",
+        "text": "坚持到底，除了坚持不下去的时候"
+      },
+      {
+        "label": "C",
+        "text": "买装备比跑步快乐一万倍"
+      },
+      {
+        "label": "D",
+        "text": "朋友圈没人点赞，但没人点赞我也要跑"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A68",
+    "dimension": "A5",
+    "category": "general",
+    "text": "一位穿着拖鞋的老大爷轻松超过了你，这时你心里想的是？",
+    "options": [
+      {
+        "label": "A",
+        "text": "「我这双两千块的鞋在哭，但我礼貌地让它小声点。」"
+      },
+      {
+        "label": "B",
+        "text": "「他可能不是人类，是天上下凡来嘲笑消费主义的。」"
+      },
+      {
+        "label": "C",
+        "text": "「没事，他只是在刷步数，而我是在为灵魂燃烧。」"
+      },
+      {
+        "label": "D",
+        "text": "「等我到了他这个年纪，我也穿人字拖跑全马，吓死年轻人。」"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A69",
+    "dimension": "A5",
+    "category": "general",
+    "text": "你的压缩袜深夜离家出走，是因为？",
+    "options": [
+      {
+        "label": "A",
+        "text": "它觉得你的小腿配不上它的压力等级"
+      },
+      {
+        "label": "B",
+        "text": "它想去跟一个更专业、更会拉伸的脚踝过日子"
+      },
+      {
+        "label": "C",
+        "text": "它厌倦了每次跑完都被你手忙脚乱地反着脱下来"
+      },
+      {
+        "label": "D",
+        "text": "其实没走，只是藏在你永远找不到的那只跑鞋里"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A70",
+    "dimension": "A5",
+    "category": "general",
+    "text": "你在梦里参加了一场没有终点的比赛，主办方对你说：",
+    "options": [
+      {
+        "label": "A",
+        "text": "「跑不动就别跑了，反正也没有奖牌，只有WiFi密码。」"
+      },
+      {
+        "label": "B",
+        "text": "「这场比赛的计时芯片在你心里，但你好像已经关机很久了。」"
+      },
+      {
+        "label": "C",
+        "text": "「前面十公里是上坡，后面全是回忆杀，补给站只有凉白开。」"
+      },
+      {
+        "label": "D",
+        "text": "「你其实已经完赛47次了，只是每次我们都在你睡着后把终点线拆了。」"
+      }
+    ],
+    "isSoul": true,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A71",
+    "dimension": "A5",
+    "category": "general",
+    "text": "赛道摄影师拍到了你的人生照片，你的第一反应是？",
+    "options": [
+      {
+        "label": "A",
+        "text": "『什么绝美光影，原来我跑步时像在拍运动品牌广告』"
+      },
+      {
+        "label": "B",
+        "text": "『这不是我，这是埃塞俄比亚在逃公主/王子』"
+      },
+      {
+        "label": "C",
+        "text": "『表情狰狞得像在参加铁人三项，但腿形意外不错』"
+      },
+      {
+        "label": "D",
+        "text": "『照片里我的手表屏幕清晰可见：心率183，距离8.47，开悟了』"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A72",
+    "dimension": "A5",
+    "category": "general",
+    "text": "如果有一天跑步变成了违禁行为，你觉得自己会？",
+    "options": [
+      {
+        "label": "A",
+        "text": "成立地下跑团组织，接头暗号是「今天你乳酸堆积了吗」"
+      },
+      {
+        "label": "B",
+        "text": "转行当跑步主播，用「快走」的名义偷偷摇手臂"
+      },
+      {
+        "label": "C",
+        "text": "彻底躺平，既然禁止了那我也正好有理由不跑了"
+      },
+      {
+        "label": "D",
+        "text": "移民到一个跑步合法的国家，比如公园大爷较多的小区"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A73",
+    "dimension": "A5",
+    "category": "general",
+    "text": "跑步APP弹出一个你从未见过的成就徽章，上面写着：",
+    "options": [
+      {
+        "label": "A",
+        "text": "「连续三个月没有PB，但你还在坚持——这本身就是奇迹。」"
+      },
+      {
+        "label": "B",
+        "text": "「你的年跑量打败了全国0.3%的跑者，以及全国99.7%的沙发。」"
+      },
+      {
+        "label": "C",
+        "text": "「你曾在凌晨五点开跑，原因只是睡不着。这很棒吗？不，但这是你。」"
+      },
+      {
+        "label": "D",
+        "text": "「恭喜解锁隐藏成就：『跑得不多，但想得很美』。」"
+      }
+    ],
+    "isSoul": true,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A74",
+    "dimension": "A1",
+    "category": "general",
+    "text": "你跑步的动力80%来自？",
+    "options": [
+      {
+        "label": "A",
+        "text": "想在朋友圈出现「这人怎么又去跑步了」的感叹"
+      },
+      {
+        "label": "B",
+        "text": "体检报告上的箭头比我的跑量还多，不跑不行了"
+      },
+      {
+        "label": "C",
+        "text": "羡慕某个网红跑者的生活，幻想自己跑多了也能接到广告"
+      },
+      {
+        "label": "D",
+        "text": "没什么动力，我就是贱，不跑会焦虑，跑了会累"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A75",
+    "dimension": "A1",
+    "category": "general",
+    "text": "有人评论你「跑得又不快，发什么跑步数据」，你的回应是？",
+    "options": [
+      {
+        "label": "A",
+        "text": "拉黑删除，我的世界不需要这种没有热身心率的人"
+      },
+      {
+        "label": "B",
+        "text": "微微一笑，下次专门发一条仅他可见的10公里截图"
+      },
+      {
+        "label": "C",
+        "text": "回复「你说得对」，但心里已经和他在评论区大战三百回合"
+      },
+      {
+        "label": "D",
+        "text": "根本不回复，真正的强者连解释都觉得浪费糖原"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A76",
+    "dimension": "A1",
+    "category": "general",
+    "text": "你的跑步人设是什么？",
+    "options": [
+      {
+        "label": "A",
+        "text": "勤奋打卡鸡：每天5点起床晨跑，配图必有日出和海盐"
+      },
+      {
+        "label": "B",
+        "text": "佛系幽灵跑：一年跑三回，但装备永远是当季新款"
+      },
+      {
+        "label": "C",
+        "text": "伤痛文学跑：每次发动态都在反思人生，配速不快但金句多"
+      },
+      {
+        "label": "D",
+        "text": "数据刺客：表面「随便跑跑」，实际每场都精心准备战术表"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A77",
+    "dimension": "A1",
+    "category": "general",
+    "text": "你跑步的最终目的是？",
+    "options": [
+      {
+        "label": "A",
+        "text": "活到领退休金那天，跑步是让我社保不白交的手段"
+      },
+      {
+        "label": "B",
+        "text": "集齐六大满贯，不是为了跑步，是为了和别人聊天有谈资"
+      },
+      {
+        "label": "C",
+        "text": "减肥——虽然跑了五年也没瘦，但反正不归牛顿管"
+      },
+      {
+        "label": "D",
+        "text": "寻找人生的意义，目前进度：跑步3200公里，意义0%"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A78",
+    "dimension": "A2",
+    "category": "general",
+    "text": "撞墙期时，你会对路边的什么东西产生幻觉？",
+    "options": [
+      {
+        "label": "A",
+        "text": "补给站的桌子变成了我外婆家的餐桌，上面有一碗红烧肉"
+      },
+      {
+        "label": "B",
+        "text": "终点拱门其实是 arbitrary 的工作邮箱，跑过去就能辞职"
+      },
+      {
+        "label": "C",
+        "text": "路边的志愿者全是我的小学同学，他们在喊我大名给我加油"
+      },
+      {
+        "label": "D",
+        "text": "自己的影子领先我五十米，我知道它在嘲讽我"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A79",
+    "dimension": "A2",
+    "category": "general",
+    "text": "你在补给站拿水时，手一抖全泼在了旁边选手身上，你会？",
+    "options": [
+      {
+        "label": "A",
+        "text": "立刻道歉并陪跑三公里，直到对方原谅或甩掉我"
+      },
+      {
+        "label": "B",
+        "text": "假装不是我，顺手抓第二杯继续喝，头也不回地跑了"
+      },
+      {
+        "label": "C",
+        "text": "大喊「我是你今天的降温志愿者！」然后加速逃离现场"
+      },
+      {
+        "label": "D",
+        "text": "愣在原地思考人生，直到被后面的人撞醒"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A80",
+    "dimension": "A2",
+    "category": "general",
+    "text": "冲刺阶段有人张开双臂想要跟你击掌，你的反应是？",
+    "options": [
+      {
+        "label": "A",
+        "text": "精准闪避，「对不起，我今天的步频不允许任何社交行为」"
+      },
+      {
+        "label": "B",
+        "text": "用力击掌，结果两人同时失去平衡，一起滚过了终点线"
+      },
+      {
+        "label": "C",
+        "text": "假装没看见，内心OS：「你谁？我认识你吗配速多少？」"
+      },
+      {
+        "label": "D",
+        "text": "击掌并大喊「一起加油！」——虽然说完自己就岔气了"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A81",
+    "dimension": "A2",
+    "category": "general",
+    "text": "Aid station的大喇叭正在播放你最讨厌的歌，你会？",
+    "options": [
+      {
+        "label": "A",
+        "text": "边跑边骂DJ，把这段路当作节奏训练，用脚打反拍"
+      },
+      {
+        "label": "B",
+        "text": "放慢脚步听完再走，毕竟这可能是你唯一一次欣赏它的机会"
+      },
+      {
+        "label": "C",
+        "text": "这首歌让你充满恨意，不知不觉PB了恨意驱动型跑者"
+      },
+      {
+        "label": "D",
+        "text": "跟志愿者说「切歌」，虽然知道他根本不会理你"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A82",
+    "dimension": "A3",
+    "category": "general",
+    "text": "你的Garmin表盘提醒「今日建议休息」，你会？",
+    "options": [
+      {
+        "label": "A",
+        "text": "无视它，电子产品懂什么人类的意志力"
+      },
+      {
+        "label": "B",
+        "text": "听从它，并且额外午睡一小时，把它当圣旨供起来"
+      },
+      {
+        "label": "C",
+        "text": "把它卸载重装，假装我是第一次用这块表"
+      },
+      {
+        "label": "D",
+        "text": "跑完回家给它充电，边充边说「下次再说实话我就换Apple Watch」"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A83",
+    "dimension": "A3",
+    "category": "general",
+    "text": "你新买了一双限量配色跑鞋，第一次穿出门时的心情是？",
+    "options": [
+      {
+        "label": "A",
+        "text": "像皇帝登基，每一步都在接受路人的臣服礼"
+      },
+      {
+        "label": "B",
+        "text": "小心翼翼避开所有水坑，回家立刻用牙刷刷鞋底"
+      },
+      {
+        "label": "C",
+        "text": "故意放慢配速，让更多人有机会看清鞋面上的联名logo"
+      },
+      {
+        "label": "D",
+        "text": "穿了才发现磨脚后跟，现在它唯一的用处是放在鞋柜里发光"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A84",
+    "dimension": "A3",
+    "category": "general",
+    "text": "你的号码布收藏册里，最珍贵的一张是因为？",
+    "options": [
+      {
+        "label": "A",
+        "text": "它是你唯一一次中签名额，别的都是花钱买的慈善名额"
+      },
+      {
+        "label": "B",
+        "text": "上面的芯片没拆，留作「下次也许还能刷进门」的念想"
+      },
+      {
+        "label": "C",
+        "text": "号码是你的生日，你觉得组委会暗恋你"
+      },
+      {
+        "label": "D",
+        "text": "那次比赛你跑了最后一名，完赛后仍有饭吃，是真正的人文关怀"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A85",
+    "dimension": "A3",
+    "category": "general",
+    "text": "你对压缩袜的态度是？",
+    "options": [
+      {
+        "label": "A",
+        "text": "没有它我无法起床跑步，医学上和心理上都是如此"
+      },
+      {
+        "label": "B",
+        "text": "坚信它只是心理安慰，但还是会买最贵的款式"
+      },
+      {
+        "label": "C",
+        "text": "觉得穿上像火腿肠，但为了恢复效果我愿意当火腿肠"
+      },
+      {
+        "label": "D",
+        "text": "从来不穿，我的血管自己就有觉悟"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A86",
+    "dimension": "A4",
+    "category": "general",
+    "text": "赛前一周你突然想吃某种奇怪的东西，它是？",
+    "options": [
+      {
+        "label": "A",
+        "text": "十全大补汤里的那颗红枣，我觉得它在召唤我"
+      },
+      {
+        "label": "B",
+        "text": "小学门口五毛钱的辣条，身体和灵魂都需要回忆杀"
+      },
+      {
+        "label": "C",
+        "text": "冰块，什么都不加，只想咀嚼一种不可食用的坚硬"
+      },
+      {
+        "label": "D",
+        "text": "中链脂肪酸胶囊拌沙拉——虽然我根本不知道那是什么味道"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A87",
+    "dimension": "A4",
+    "category": "general",
+    "text": "完赛后你在酒店里醒来，第一反应是？",
+    "options": [
+      {
+        "label": "A",
+        "text": "摸大腿，确认它还在，并且正在以一种奇怪的频率抖动"
+      },
+      {
+        "label": "B",
+        "text": "打开手机看成绩，虽然已经在脑海里背了八百遍"
+      },
+      {
+        "label": "C",
+        "text": "闻房间里的味道，怀疑这是 human-sweat 主题的沉浸式酒店"
+      },
+      {
+        "label": "D",
+        "text": "盯着天花板想：「我现在退房还是再躺到太阳下山？」"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A88",
+    "dimension": "A4",
+    "category": "general",
+    "text": "为了平衡跑步和生活，你做出的最大牺牲是？",
+    "options": [
+      {
+        "label": "A",
+        "text": "把约会安排在跑完步之后，导致对方闻了我这辈子最真实的味道"
+      },
+      {
+        "label": "B",
+        "text": "用年会抽奖运气换来了比赛中签，同事以为我中的是电动车"
+      },
+      {
+        "label": "C",
+        "text": "为了晨跑放弃周六晚上的一切社交，朋友以为我进了传销"
+      },
+      {
+        "label": "D",
+        "text": "其实没有牺牲，因为我的生活已经基本被跑步吃完了"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "A89",
+    "dimension": "A4",
+    "category": "general",
+    "text": "赛后恢复期间，你最常做的「康复训练」是？",
+    "options": [
+      {
+        "label": "A",
+        "text": "躺着刷别人跑步的视频，用意念参加虚拟恢复跑"
+      },
+      {
+        "label": "B",
+        "text": "在购物车里加入三双新鞋，通过消费刺激血液循环"
+      },
+      {
+        "label": "C",
+        "text": "跟每一个没跑的人说这次有多累，用说话排乳酸"
+      },
+      {
+        "label": "D",
+        "text": "睡觉，做梦梦见自己又在跑，然后惊醒确认腿还在"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B1",
+    "dimension": "B1",
+    "category": "trail",
+    "text": "越野跑最吸引你的是什么？",
+    "options": [
+      {
+        "label": "A",
+        "text": "在山里独处，比在家躺着还自在"
+      },
+      {
+        "label": "B",
+        "text": "自虐的快感，跑完感觉自己是个烈士"
+      },
+      {
+        "label": "C",
+        "text": "补给站的热食，那是用汗水换来的米其林"
+      },
+      {
+        "label": "D",
+        "text": "迷路时跟自己对话的刺激感"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B2",
+    "dimension": "B1",
+    "category": "trail",
+    "text": "50公里以上的组别，你最担心什么？",
+    "options": [
+      {
+        "label": "A",
+        "text": "脚指甲黑掉三个，回家被老婆骂"
+      },
+      {
+        "label": "B",
+        "text": "迷路后在山上过夜，第二天上新闻"
+      },
+      {
+        "label": "C",
+        "text": "补给站的小姐姐看我的号码簿憋笑"
+      },
+      {
+        "label": "D",
+        "text": "跑到一半想吃火锅，结果退赛"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B3",
+    "dimension": "B1",
+    "category": "trail",
+    "text": "如果补给站除了常规补给外，还提供一项「神秘补给」，你会选？",
+    "options": [
+      {
+        "label": "A",
+        "text": "一位会讲脱口秀的志愿者，边补给边给你讲段子提神"
+      },
+      {
+        "label": "B",
+        "text": "一个可以帮你发朋友圈的代写服务，文案自带精修滤镜"
+      },
+      {
+        "label": "C",
+        "text": "一份「退赛同意书」签字版，附赠叫车服务优惠券"
+      },
+      {
+        "label": "D",
+        "text": "一张来自终点的全息投影奖牌，让你提前享受完赛的快感"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B4",
+    "dimension": "B1",
+    "category": "trail",
+    "text": "在山野里迷路，你的第一反应是什么？",
+    "options": [
+      {
+        "label": "A",
+        "text": "打开手机看轨迹，发现信号也没有"
+      },
+      {
+        "label": "B",
+        "text": "焦虑到原地跺脚，然后认命往回走"
+      },
+      {
+        "label": "C",
+        "text": "无所谓，反正条条大路通罗马，大不了通火葬场"
+      },
+      {
+        "label": "D",
+        "text": "等有缘人经过，顺便嘲笑一下他们的路痴"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B5",
+    "dimension": "B1",
+    "category": "trail",
+    "text": "暴雨中你的冲锋衣突然开口说话，它说：",
+    "options": [
+      {
+        "label": "A",
+        "text": "「我防的是水，不是你的人类泪水，别哭了。」"
+      },
+      {
+        "label": "B",
+        "text": "「这件衣服的防水指数只能再坚持3公里，请珍惜我。」"
+      },
+      {
+        "label": "C",
+        "text": "「其实我里面已经湿透了，但我还在假装坚强。」"
+      },
+      {
+        "label": "D",
+        "text": "「你买我的时候不是说只跑晴天吗？骗子。」"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B6",
+    "dimension": "B1",
+    "category": "trail",
+    "text": "周末约伴跑山，你prefer什么路线？",
+    "options": [
+      {
+        "label": "A",
+        "text": "有烤肠有雪糕的路线，爬坡不重要，吃的到位才是yyds"
+      },
+      {
+        "label": "B",
+        "text": "风景好的路线，可以停下来拍照，出片率第一"
+      },
+      {
+        "label": "C",
+        "text": "能刷PB的路线，下山要快，烤肉要香"
+      },
+      {
+        "label": "D",
+        "text": "难度大的路线，要的就是这种上强度的感觉"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B7",
+    "dimension": "B1",
+    "category": "trail",
+    "text": "100公里比赛，最怕哪个阶段？",
+    "options": [
+      {
+        "label": "A",
+        "text": "50公里处，身体开始叛变"
+      },
+      {
+        "label": "B",
+        "text": "夜跑阶段，困到对着树说话"
+      },
+      {
+        "label": "C",
+        "text": "最后10公里，天亮了但灵魂已经出窍"
+      },
+      {
+        "label": "D",
+        "text": "发朋友圈的时候，不知道该怎么卖惨"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B8",
+    "dimension": "B1",
+    "category": "trail",
+    "text": "有人说「越野跑是跑给山看的」，你怎么看？",
+    "options": [
+      {
+        "label": "A",
+        "text": "山又看不懂，我是跑给自己看的"
+      },
+      {
+        "label": "B",
+        "text": "山看完就忘，朋友圈记住才是真的"
+      },
+      {
+        "label": "C",
+        "text": "补给站才是终点，续命才是真谛"
+      },
+      {
+        "label": "D",
+        "text": "跑到最后才发现，山一直在，人没了"
+      }
+    ],
+    "isSoul": true,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B9",
+    "dimension": "B1",
+    "category": "trail",
+    "text": "如果CP点的志愿者其实是你的前任假扮的，ta对你说「加油」，你会？",
+    "options": [
+      {
+        "label": "A",
+        "text": "咬牙切齿地加速冲出去，证明「离开你我能跑得更快」"
+      },
+      {
+        "label": "B",
+        "text": "当场愣住，然后问ta：「你是不是故意在这里等我退赛的？」"
+      },
+      {
+        "label": "C",
+        "text": "若无其事地拿补给，但手抖到把可乐全泼在了号码布上"
+      },
+      {
+        "label": "D",
+        "text": "掏出手机合影，配文「最好的前任，是我PB路上的志愿者」"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B10",
+    "dimension": "B1",
+    "category": "trail",
+    "text": "越野赛前一晚，你在干什么？",
+    "options": [
+      {
+        "label": "A",
+        "text": "检查装备三遍，强迫症发作，闹钟定5个，号码布别了又拆"
+      },
+      {
+        "label": "B",
+        "text": "该吃吃该喝喝，正常作息，相信训练，淡定如佛"
+      },
+      {
+        "label": "C",
+        "text": "失眠到2点，脑子里全是赛道，爬升数据在眼前飘"
+      },
+      {
+        "label": "D",
+        "text": "在群里水群，跟别人对线讨论装备，顺便把别人也聊焦虑了"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B11",
+    "dimension": "B1",
+    "category": "trail",
+    "text": "DNF（未完赛）对你来说意味着什么？",
+    "options": [
+      {
+        "label": "A",
+        "text": "失败，下次一定复仇"
+      },
+      {
+        "label": "B",
+        "text": "正常，越野跑的必修课"
+      },
+      {
+        "label": "C",
+        "text": "羞耻，假装从没报过这场比赛"
+      },
+      {
+        "label": "D",
+        "text": "退款？不，是押金打水漂"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B12",
+    "dimension": "B1",
+    "category": "trail",
+    "text": "你会提前告诉家人你要去跑越野吗？",
+    "options": [
+      {
+        "label": "A",
+        "text": "会，还要写遗书那种"
+      },
+      {
+        "label": "B",
+        "text": "简单说一下，报喜不报忧"
+      },
+      {
+        "label": "C",
+        "text": "不说，说了他们也不懂，以为我只是去爬山"
+      },
+      {
+        "label": "D",
+        "text": "已经不敢说了，毕竟DNF过一次"
+      }
+    ],
+    "isSoul": true,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B13",
+    "dimension": "B2",
+    "category": "trail",
+    "text": "如果今年的强制装备清单里新增了一项「一只活鸡」，你会？",
+    "options": [
+      {
+        "label": "A",
+        "text": "认真去农贸市场挑选一只性格温顺、体重轻的鸡"
+      },
+      {
+        "label": "B",
+        "text": "买一只橡胶鸡充数，反正检查员不会捏它"
+      },
+      {
+        "label": "C",
+        "text": "直接弃赛，认为组委会已经丧失了理智"
+      },
+      {
+        "label": "D",
+        "text": "把鸡绑在背包上，让它成为你的私补+精神导师"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B14",
+    "dimension": "B2",
+    "category": "trail",
+    "text": "如果组委会允许你带一件「超能力装备」进山，你会选？",
+    "options": [
+      {
+        "label": "A",
+        "text": "自动导航鞋，永远不会迷路，但偶尔会带你进补给站"
+      },
+      {
+        "label": "B",
+        "text": "隐形登山杖，只有你能看见，用来假装自己很会爬坡"
+      },
+      {
+        "label": "C",
+        "text": "永不没电的头灯，亮度可调至「让对面山头以为天亮」"
+      },
+      {
+        "label": "D",
+        "text": "反重力水袋，越喝越轻，喝到最后一滴时你会飘起来"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B15",
+    "dimension": "B2",
+    "category": "trail",
+    "text": "如果越野跑鞋在赛前一晚会说话，它最可能对你说什么？",
+    "options": [
+      {
+        "label": "A",
+        "text": "「明天的赛道我查过了，泥石流概率30%，建议请假。」"
+      },
+      {
+        "label": "B",
+        "text": "「我想和那双HOKA换班，它的底比我厚，摔了不疼。」"
+      },
+      {
+        "label": "C",
+        "text": "「记得给我拍一张起跑前的定妆照，我右脸比较上镜。」"
+      },
+      {
+        "label": "D",
+        "text": "「如果明天你退赛了，请不要把责任推到我抓地力不够上。」"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B16",
+    "dimension": "B2",
+    "category": "trail",
+    "text": "你的越野背包在出发时突然裂开，只能保留一样东西，你会留？",
+    "options": [
+      {
+        "label": "A",
+        "text": "手机，因为要发朋友圈证明我来过"
+      },
+      {
+        "label": "B",
+        "text": "能量胶，因为饥饿比孤独更可怕"
+      },
+      {
+        "label": "C",
+        "text": "冲锋衣，因为我预感山神今天心情不好"
+      },
+      {
+        "label": "D",
+        "text": "背包本身，毕竟没有背包我就没有裂开的资格"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B17",
+    "dimension": "B2",
+    "category": "trail",
+    "text": "如果你的头灯在夜跑时变成了迪斯科球，你会？",
+    "options": [
+      {
+        "label": "A",
+        "text": "跟着节奏摇摆跑，把夜跑变成移动夜店"
+      },
+      {
+        "label": "B",
+        "text": "立刻关掉它，怕被野生动物当成发情信号"
+      },
+      {
+        "label": "C",
+        "text": "利用炫目的灯光吓退前面的选手，强行开路"
+      },
+      {
+        "label": "D",
+        "text": "拍视频发抖音，tag「全网唯一自带BGM的越野跑者」"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B18",
+    "dimension": "B2",
+    "category": "trail",
+    "text": "下雨天你的越野鞋突然长出了吸盘，像一只章鱼，你会？",
+    "options": [
+      {
+        "label": "A",
+        "text": "感到惊喜，认为这是生物科技与运动装备的完美结合"
+      },
+      {
+        "label": "B",
+        "text": "有点恶心，但为了不摔死选择默默接受"
+      },
+      {
+        "label": "C",
+        "text": "停下来拍照，发朋友圈问「有没有人遇到这种情况」"
+      },
+      {
+        "label": "D",
+        "text": "试着用它爬树，反正赛道也没规定不能爬树抄近路"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B19",
+    "dimension": "B2",
+    "category": "trail",
+    "text": "如果你的登山杖成了精，开始指挥你跑山，它会说：",
+    "options": [
+      {
+        "label": "A",
+        "text": "「左！右！左！右！请你把我当拐杖而不是武器！」"
+      },
+      {
+        "label": "B",
+        "text": "「前面那段下坡你可以飞，但摔了我可不负责。」"
+      },
+      {
+        "label": "C",
+        "text": "「其实我是一对分手的情侣，请你不要同时握住我们俩。」"
+      },
+      {
+        "label": "D",
+        "text": "「你挥杖的样子像在指挥交通，很帅，但没用。」"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B20",
+    "dimension": "B2",
+    "category": "trail",
+    "text": "如果你必须全程直播越野赛给你的前任看，你会怎么运营这场直播？",
+    "options": [
+      {
+        "label": "A",
+        "text": "专门在风景最美的CP点停下来讲解：「看，没有你我也能来这」"
+      },
+      {
+        "label": "B",
+        "text": "一摔倒就切镜头对准天空，假装信号不好"
+      },
+      {
+        "label": "C",
+        "text": "请志愿者帮忙举自拍杆，自己专心跑，这叫专业外包"
+      },
+      {
+        "label": "D",
+        "text": "全程不说话，只用喘息声证明自己的努力和恨意"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B21",
+    "dimension": "B2",
+    "category": "trail",
+    "text": "如果你的跑步眼镜自带美颜滤镜，你看到的赛道会是什么样？",
+    "options": [
+      {
+        "label": "A",
+        "text": "所有志愿者都变成了明星脸，补给站像粉丝见面会"
+      },
+      {
+        "label": "B",
+        "text": "爬升数据被柔焦虚化，看起来像是平坦的公园步道"
+      },
+      {
+        "label": "C",
+        "text": "自己的倒影永远处于最佳状态，每跑一步都在放电"
+      },
+      {
+        "label": "D",
+        "text": "终点线被P上了彩虹和独角兽，像童话世界入口"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B22",
+    "dimension": "B2",
+    "category": "trail",
+    "text": "如果你的袜子在鞋子里编出了中国结，这说明？",
+    "options": [
+      {
+        "label": "A",
+        "text": "你的脚趾具有极高的艺术天赋，应该送去工艺美术学院"
+      },
+      {
+        "label": "B",
+        "text": "这双袜子的包裹性太强了，强到可以考编了"
+      },
+      {
+        "label": "C",
+        "text": "你需要停下来把它解开，否则下山时它会变成捕兽夹"
+      },
+      {
+        "label": "D",
+        "text": "这是山神给你的暗示：「你已经跑太远了，该回头了。」"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B23",
+    "dimension": "B2",
+    "category": "trail",
+    "text": "如果组委会宣布今年的强装检查由AI无人机执行，你会？",
+    "options": [
+      {
+        "label": "A",
+        "text": "穿上最闪的装备，试图用反光条干扰无人机的视觉识别"
+      },
+      {
+        "label": "B",
+        "text": "友好地对无人机挥手，希望它给你拍一张帅气的航拍"
+      },
+      {
+        "label": "C",
+        "text": "藏在树后面，像玩吃鸡一样躲避扫描"
+      },
+      {
+        "label": "D",
+        "text": "贿赂无人机操作员，请他给所有选手都打勾"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B24",
+    "dimension": "B2",
+    "category": "trail",
+    "text": "你最喜欢的越野装备品牌是什么？",
+    "options": [
+      {
+        "label": "A",
+        "text": "Salomon，轻量化越野的信仰"
+      },
+      {
+        "label": "B",
+        "text": "HOKA，厚底让我觉得自己能飞"
+      },
+      {
+        "label": "C",
+        "text": "凯乐石，国货之光，性价比之王"
+      },
+      {
+        "label": "D",
+        "text": "我不挑品牌，哪个骨折买哪个"
+      }
+    ],
+    "isSoul": true,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B25",
+    "dimension": "B3",
+    "category": "trail",
+    "text": "如果你发现赛道图上的爬升数据是组委会用PS改的，实际要多1000米，你会？",
+    "options": [
+      {
+        "label": "A",
+        "text": "愤怒但接受，毕竟来都来了，骂骂咧咧地爬"
+      },
+      {
+        "label": "B",
+        "text": "立刻在选手群里曝光，发起集体诉讼（群接龙）"
+      },
+      {
+        "label": "C",
+        "text": "把赛道图截图发朋友圈，配文「人生 first blood」"
+      },
+      {
+        "label": "D",
+        "text": "无所谓，反正我爬坡也是走，多走一会儿的事"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B26",
+    "dimension": "B3",
+    "category": "trail",
+    "text": "爬坡时你遇到一只山羊对你竖中指（用蹄子），你会？",
+    "options": [
+      {
+        "label": "A",
+        "text": "不服输地加速追上它，和它进行一场尊严之战"
+      },
+      {
+        "label": "B",
+        "text": "停下来给它拍照，配文「山里的原住民不太友好」"
+      },
+      {
+        "label": "C",
+        "text": "跟它商量：「你驮我上去，我分你一半能量胶。」"
+      },
+      {
+        "label": "D",
+        "text": "默默低下头，承认在这个海拔，它确实比我强"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B27",
+    "dimension": "B3",
+    "category": "trail",
+    "text": "下坡时你的膝盖开始用微信语音60秒方阵轰炸你，内容最可能是？",
+    "options": [
+      {
+        "label": "A",
+        "text": "「前面那段你慢点！我不是钛合金的！重复三遍！」"
+      },
+      {
+        "label": "B",
+        "text": "「我知道你着急完赛，但请你尊重一下我的半月板。」"
+      },
+      {
+        "label": "C",
+        "text": "「如果今天你敢PB，明天我就敢让你在马桶上起不来。」"
+      },
+      {
+        "label": "D",
+        "text": "「其实我不疼，我只是想引起你的注意，毕竟你眼里只有配速。」"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B28",
+    "dimension": "B3",
+    "category": "trail",
+    "text": "你怎么看待「跑山」这个说法？",
+    "options": [
+      {
+        "label": "A",
+        "text": "跑山是精髓，下山跑起来才是爽"
+      },
+      {
+        "label": "B",
+        "text": "上山跑不了，下山还跑不了，那叫爬山"
+      },
+      {
+        "label": "C",
+        "text": "我更喜欢「走山」，走比跑更可持续"
+      },
+      {
+        "label": "D",
+        "text": "跑到最后才发现，其实是在赶路"
+      }
+    ],
+    "isSoul": true,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B29",
+    "dimension": "B3",
+    "category": "trail",
+    "text": "如果你的肺在这个海拔开通了微博账号，它正在发的小作文是：",
+    "options": [
+      {
+        "label": "A",
+        "text": "「谢邀，人在山顶，刚下氧气瓶，感觉人生到达了巅峰。」"
+      },
+      {
+        "label": "B",
+        "text": "「主人又在作死了，我已经报警了，但110说不归他们管。」"
+      },
+      {
+        "label": "C",
+        "text": "「如果我有罪，请让法律制裁我，而不是让我在这里做高反训练。」"
+      },
+      {
+        "label": "D",
+        "text": "「其实还好，主要是主人的心理素质不行，呼吸声太大了。」"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B30",
+    "dimension": "B3",
+    "category": "trail",
+    "text": "如果爬升数据突然变成了你前任的名字，每爬升100米就出现一次，你会？",
+    "options": [
+      {
+        "label": "A",
+        "text": "咬牙切齿地爬得更快，用汗水冲刷心理阴影"
+      },
+      {
+        "label": "B",
+        "text": "每看到一次就停下来发朋友圈，让赛道变成情感电台"
+      },
+      {
+        "label": "C",
+        "text": "当场退赛，认为这是组委会和前任联手设计的陷阱"
+      },
+      {
+        "label": "D",
+        "text": "心平气和，毕竟前任已经是过去式，就像身后的下坡"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B31",
+    "dimension": "B3",
+    "category": "trail",
+    "text": "你发现技术路段其实是赛道导演组布设的综艺关卡，主持人拿着喇叭喊「请选择你的命运」，你会？",
+    "options": [
+      {
+        "label": "A",
+        "text": "选择「勇士通道」——一段布满泥浆和假蜘蛛的速降路线"
+      },
+      {
+        "label": "B",
+        "text": "选择「智者通道」——解一道数学题才能通过，但答案是退赛"
+      },
+      {
+        "label": "C",
+        "text": "选择「社交通道」——必须和陌生选手牵手跑完500米"
+      },
+      {
+        "label": "D",
+        "text": "质问导演组：「有没有VIP通道？我加钱。」"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B32",
+    "dimension": "B3",
+    "category": "trail",
+    "text": "如果你抄近路会进入一个时间流速不同的异次元，跑1分钟等于外面1小时，你会？",
+    "options": [
+      {
+        "label": "A",
+        "text": "毫不犹豫地冲进去，这样可以在关门时间前美美睡一觉"
+      },
+      {
+        "label": "B",
+        "text": "害怕出来以后手机没电错过朋友圈最佳发布时间"
+      },
+      {
+        "label": "C",
+        "text": "拉上旁边的人一起进去，说好进去后组成生存小队"
+      },
+      {
+        "label": "D",
+        "text": "算了，老老实实爬升，毕竟异次元可能没有补给站"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B33",
+    "dimension": "B3",
+    "category": "trail",
+    "text": "如果组委会承认「爬山虎」（爬山很快的人）其实是雇佣的托儿，你的反应是？",
+    "options": [
+      {
+        "label": "A",
+        "text": "恍然大悟，原来不是我弱，是对方演技太好"
+      },
+      {
+        "label": "B",
+        "text": "愤怒，感觉自己的自卑感被商业化了"
+      },
+      {
+        "label": "C",
+        "text": "想应聘这个岗位，毕竟我走路也很像有剧本的"
+      },
+      {
+        "label": "D",
+        "text": "无所谓，反正我也追不上，托儿不托儿跟我没关系"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B34",
+    "dimension": "B3",
+    "category": "trail",
+    "text": "你发现自己日常最多的爬升训练其实是「在公司楼梯间躲避老板」，这说明了什么？",
+    "options": [
+      {
+        "label": "A",
+        "text": "说明我的越野能力已经在职场求生中得到了充分磨练"
+      },
+      {
+        "label": "B",
+        "text": "说明我的训练计划非常贴合实际生活场景，极具功能性"
+      },
+      {
+        "label": "C",
+        "text": "说明我需要换一份工作，或者换一个更慈悲的老板"
+      },
+      {
+        "label": "D",
+        "text": "说明我应该把这段经历写进参赛简历，组委会可能会同情我"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B35",
+    "dimension": "B3",
+    "category": "trail",
+    "text": "如果上坡时重力突然反转了10秒钟，你会做什么？",
+    "options": [
+      {
+        "label": "A",
+        "text": "利用这10秒钟做倒立爬坡，拍一段全网唯一的越野视频"
+      },
+      {
+        "label": "B",
+        "text": "惊恐地抱住旁边的大树，等待物理法则恢复正常"
+      },
+      {
+        "label": "C",
+        "text": "往天上吐一口水，看它是不是会落到自己脸上"
+      },
+      {
+        "label": "D",
+        "text": "趁机超越前面的人，反正牛顿暂时管不了这片区域"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B36",
+    "dimension": "B3",
+    "category": "trail",
+    "text": "你觉得爬升给你的最大收获是什么？",
+    "options": [
+      {
+        "label": "A",
+        "text": "意志力的磨炼，爬完觉得人生没什么过不去"
+      },
+      {
+        "label": "B",
+        "text": "看风景，站得高看得远，朋友圈素材多"
+      },
+      {
+        "label": "C",
+        "text": "跑步能力的提升，爬过山就知道平地多幸福"
+      },
+      {
+        "label": "D",
+        "text": "没什么收获，就是喜欢受罪"
+      }
+    ],
+    "isSoul": true,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B37",
+    "dimension": "B4",
+    "category": "trail",
+    "text": "如果你拍到的绝美风景照片里，有一只野生大熊猫正在对你竖中指，你会？",
+    "options": [
+      {
+        "label": "A",
+        "text": "立刻把照片发给组委会，要求加分或颁发「最受欢迎选手奖」"
+      },
+      {
+        "label": "B",
+        "text": "觉得这是山神显灵，证明你今天运势爆表（虽然手势不太礼貌）"
+      },
+      {
+        "label": "C",
+        "text": "P掉它的手指，换成点赞，然后发朋友圈 claiming 它很友善"
+      },
+      {
+        "label": "D",
+        "text": "不敢打扰它，默默删掉照片，假装什么都没看见"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B38",
+    "dimension": "B4",
+    "category": "trail",
+    "text": "你朋友圈的越野跑照片通常是什么风格？",
+    "options": [
+      {
+        "label": "A",
+        "text": "精修过的，赛道风景+精算角度+完美光线"
+      },
+      {
+        "label": "B",
+        "text": "累到崩溃的丑照，反差感才吸引眼球"
+      },
+      {
+        "label": "C",
+        "text": "只有完赛证书和奖牌，假装很专业"
+      },
+      {
+        "label": "D",
+        "text": "不发朋友圈，用跑步APP记录"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B39",
+    "dimension": "B4",
+    "category": "trail",
+    "text": "拍照耽误了比赛，你会后悔吗？",
+    "options": [
+      {
+        "label": "A",
+        "text": "不会，风景错过了就没了，比赛明年还有"
+      },
+      {
+        "label": "B",
+        "text": "会，下次一定要管住手"
+      },
+      {
+        "label": "C",
+        "text": "取决于拍得好不好看，好看就不后悔"
+      },
+      {
+        "label": "D",
+        "text": "我跑得慢，不在乎那几分钟"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B40",
+    "dimension": "B4",
+    "category": "trail",
+    "text": "如果赛道上的绝美风景其实是VR投影，你其实是戴着眼镜在跑跑步机，你会？",
+    "options": [
+      {
+        "label": "A",
+        "text": "摘下眼镜愤怒抗议，要求退还报名费和「精神损失费」"
+      },
+      {
+        "label": "B",
+        "text": "觉得没关系，反正朋友圈发的是照片，照片好看就行"
+      },
+      {
+        "label": "C",
+        "text": "偷偷把眼镜带走，以后在家跑步也能「环游世界」"
+      },
+      {
+        "label": "D",
+        "text": "长舒一口气，难怪今天没有风，难怪补给站不会出现"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B41",
+    "dimension": "B4",
+    "category": "trail",
+    "text": "如果赛道摄影师全都是你的前任安排的，你会怎么摆pose？",
+    "options": [
+      {
+        "label": "A",
+        "text": "故意露出最痛苦的表情，让ta知道没有ta我过得非常惨（ physically ）"
+      },
+      {
+        "label": "B",
+        "text": "笑得阳光灿烂，竖起大拇指，传达「离开你老子活得更好」"
+      },
+      {
+        "label": "C",
+        "text": "背对镜头，摆出深沉的侧影，营造「孤独跑者」的艺术感"
+      },
+      {
+        "label": "D",
+        "text": "冲过去抢相机，确保这些照片不会被公开处刑"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B42",
+    "dimension": "B4",
+    "category": "trail",
+    "text": "如果你停下来拍照时被无人机抓去做了赛事直播封面，你会？",
+    "options": [
+      {
+        "label": "A",
+        "text": "立刻整理头发和号码布，假装自己本来就在摆拍"
+      },
+      {
+        "label": "B",
+        "text": "对着无人机比心，试图用颜值换取更多镜头时间"
+      },
+      {
+        "label": "C",
+        "text": "担心自己的关门时间，对着无人机大喊「别拍了让我走！」"
+      },
+      {
+        "label": "D",
+        "text": "趁机掏出赞助商的产品（如果有的话），假装这是一段广告植入"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B43",
+    "dimension": "B4",
+    "category": "trail",
+    "text": "如果你的手机在山上自动下载了《盗墓笔记》，你会怎么解读这个征兆？",
+    "options": [
+      {
+        "label": "A",
+        "text": "认为这座山可能真的藏着古墓，跑步变成了考古探险"
+      },
+      {
+        "label": "B",
+        "text": "害怕地加快脚步，生怕天黑后遇到粽子（僵尸）"
+      },
+      {
+        "label": "C",
+        "text": "给手机充电，让它继续下载第二部，反正下山还有很久"
+      },
+      {
+        "label": "D",
+        "text": "觉得手机比自己还无聊，连它都在找东西打发时间"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B44",
+    "dimension": "B4",
+    "category": "trail",
+    "text": "完赛后，你最想做什么？",
+    "options": [
+      {
+        "label": "A",
+        "text": "发朋友圈，告诉大家我还活着"
+      },
+      {
+        "label": "B",
+        "text": "找地方吃饭，饿到可以吃下一头牛"
+      },
+      {
+        "label": "C",
+        "text": "拉伸睡觉，身体已经不属于自己了"
+      },
+      {
+        "label": "D",
+        "text": "分析数据，看看这次拖了谁的后腿"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B45",
+    "dimension": "B4",
+    "category": "trail",
+    "text": "如果摄影师要求你摆出一个瑜伽动作才能拍照，你会选择？",
+    "options": [
+      {
+        "label": "A",
+        "text": "下犬式，既展示了柔韧性，又显得我很累很虔诚"
+      },
+      {
+        "label": "B",
+        "text": "树式单脚站立，在山崖边展示「人与自然合一」的平衡感"
+      },
+      {
+        "label": "C",
+        "text": "拒绝配合，告诉他「我花钱是来跑步的不是来练普拉提的」"
+      },
+      {
+        "label": "D",
+        "text": "躺尸式，直接躺在地上，说这是「赛后恢复的真实状态」"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B46",
+    "dimension": "B4",
+    "category": "trail",
+    "text": "如果你的运动相机一整场比赛只拍到了你的鼻孔，你会怎么处理这段素材？",
+    "options": [
+      {
+        "label": "A",
+        "text": "配上悬疑BGM发抖音，标题「山中有巨兽，疑似鼻孔成精」"
+      },
+      {
+        "label": "B",
+        "text": "发给朋友，让他们猜这是谁的鼻孔，猜对有奖"
+      },
+      {
+        "label": "C",
+        "text": "认真剪辑，做成一个鼻孔特写的Vlog，走抽象艺术路线"
+      },
+      {
+        "label": "D",
+        "text": "默默删除，并永远不再把相机挂在胸前的位置"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B47",
+    "dimension": "B4",
+    "category": "trail",
+    "text": "完赛后你会做什么恢复活动？",
+    "options": [
+      {
+        "label": "A",
+        "text": "拉伸+泡沫轴+冰敷全套，自虐继续"
+      },
+      {
+        "label": "B",
+        "text": "去按摩店，让专业人士收拾残骸"
+      },
+      {
+        "label": "C",
+        "text": "睡觉，睡一天都不够"
+      },
+      {
+        "label": "D",
+        "text": "泡温泉热敷，让身体慢慢复活"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B48",
+    "dimension": "B4",
+    "category": "trail",
+    "text": "你的家人/伴侣支持你跑越野吗？",
+    "options": [
+      {
+        "label": "A",
+        "text": "完全支持，还会给我加油"
+      },
+      {
+        "label": "B",
+        "text": "表面支持，实际上觉得我在浪费时间"
+      },
+      {
+        "label": "C",
+        "text": "不支持，觉得我在玩命"
+      },
+      {
+        "label": "D",
+        "text": "无所谓，反正不花他们的钱"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B49",
+    "dimension": "B4",
+    "category": "trail",
+    "text": "你觉得跑越野给你带来了什么改变？",
+    "options": [
+      {
+        "label": "A",
+        "text": "身体更健康了，这是最直接的"
+      },
+      {
+        "label": "B",
+        "text": "认识了很多有趣的人，圈子大了"
+      },
+      {
+        "label": "C",
+        "text": "变得更自律了，越野改变了生活习惯"
+      },
+      {
+        "label": "D",
+        "text": "没什么改变，但它让我接受了自己"
+      }
+    ],
+    "isSoul": true,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B50",
+    "dimension": "B4",
+    "category": "trail",
+    "text": "展望未来，你对越野跑有什么期待？",
+    "options": [
+      {
+        "label": "A",
+        "text": "完成一场百公里，这是我的朝圣"
+      },
+      {
+        "label": "B",
+        "text": "跑遍全国的山，打卡每一个赛道"
+      },
+      {
+        "label": "C",
+        "text": "稳定保持现状，不追求更多"
+      },
+      {
+        "label": "D",
+        "text": "带更多人一起跑，让越野成为生活方式"
+      }
+    ],
+    "isSoul": true,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B51",
+    "dimension": "B1",
+    "category": "trail",
+    "text": "当你在第5个CP点看到西瓜、可乐、泡面三件套时，你会：",
+    "options": [
+      {
+        "label": "A",
+        "text": "坐下吃满15分钟，关门兔来了我也得加完这碗卤蛋"
+      },
+      {
+        "label": "B",
+        "text": "各尝一口，拍照发群，然后恋恋不舍地离开"
+      },
+      {
+        "label": "C",
+        "text": "只喝水，这种补给只会腐蚀我钢铁般的意志"
+      },
+      {
+        "label": "D",
+        "text": "把可乐倒进水袋带走，这就是战略储备"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B52",
+    "dimension": "B1",
+    "category": "trail",
+    "text": "比赛当天突降暴雨，赛道变成泥浆蹦迪现场，你的第一反应是：",
+    "options": [
+      {
+        "label": "A",
+        "text": "肾上腺素狂飙，这种野的路才配得上我的HOKA"
+      },
+      {
+        "label": "B",
+        "text": "脑子里只有一个念头：能量胶会不会被泡烂"
+      },
+      {
+        "label": "C",
+        "text": "原地打开手表看实时海拔，计算DNF路线距离"
+      },
+      {
+        "label": "D",
+        "text": "一边骂主办方一边冲，骂得越狠跑得越快"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B53",
+    "dimension": "B1",
+    "category": "trail",
+    "text": "夜跑到荒山野岭，水袋空了、能量胶没了、前不着村后不着店，你会：",
+    "options": [
+      {
+        "label": "A",
+        "text": "开始冥想，进入低功耗生存模式，靠意志力巡航"
+      },
+      {
+        "label": "B",
+        "text": "打开高德地图找最近便利店，越野跑的尽头是外卖"
+      },
+      {
+        "label": "C",
+        "text": "蹲在路边扒野果，生死有命，甜不甜看天意"
+      },
+      {
+        "label": "D",
+        "text": "翻出备份胶——真正的老炮永远有Plan C"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B54",
+    "dimension": "B2",
+    "category": "trail",
+    "text": "关于强制装备，你的真实态度是：",
+    "options": [
+      {
+        "label": "A",
+        "text": "每一件都称重，超50克都是对我PB的犯罪"
+      },
+      {
+        "label": "B",
+        "text": "基础款摆拍，真出事了靠Salomon保命"
+      },
+      {
+        "label": "C",
+        "text": "不仅带齐，还带了保温毯×3，怕死第一名"
+      },
+      {
+        "label": "D",
+        "text": "强装检查员看我背包鼓成仓鼠，直接放行"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B55",
+    "dimension": "B2",
+    "category": "trail",
+    "text": "你的越野鞋收藏现状是：",
+    "options": [
+      {
+        "label": "A",
+        "text": "HOKA/Salomon/Altra各一双，按赛道硬度轮班"
+      },
+      {
+        "label": "B",
+        "text": "一双战靴穿了3000公里，底磨平了感情更深了"
+      },
+      {
+        "label": "C",
+        "text": "不懂鞋，盲搜「UTMB冠军同款」直接下单"
+      },
+      {
+        "label": "D",
+        "text": "鞋柜爆炸，但每场比赛还是穿那双最旧的"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B56",
+    "dimension": "B2",
+    "category": "trail",
+    "text": "赛前团购买的头灯到了，打开发现亮度还不如手机手电筒，你会：",
+    "options": [
+      {
+        "label": "A",
+        "text": "连夜下单Fenix，头灯是夜跑者的第二个心脏"
+      },
+      {
+        "label": "B",
+        "text": "将就用，反正我夜路跑得少， mostly daytime"
+      },
+      {
+        "label": "C",
+        "text": "退货+写800字差评，让后来者少走弯路"
+      },
+      {
+        "label": "D",
+        "text": "直接挂两个，亮度不够数量来凑"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B57",
+    "dimension": "B3",
+    "category": "trail",
+    "text": "面对一段70度绝望坡，你的内心OS是：",
+    "options": [
+      {
+        "label": "A",
+        "text": "手脚并用才是进化论的终极答案"
+      },
+      {
+        "label": "B",
+        "text": "打开两步路确认这不是导航抽风"
+      },
+      {
+        "label": "C",
+        "text": "数呼吸，数步数，数到山顶就冥想超度自己"
+      },
+      {
+        "label": "D",
+        "text": "掏出登山杖，开始表演《老人与山》"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B58",
+    "dimension": "B3",
+    "category": "trail",
+    "text": "下坡时遇到乱石+落叶+疑似野猪道的技术路段，你会：",
+    "options": [
+      {
+        "label": "A",
+        "text": "重心压低，大开大合，相信自己膝盖的野性"
+      },
+      {
+        "label": "B",
+        "text": "减速到徒步配速，安全回家才是终点"
+      },
+      {
+        "label": "C",
+        "text": "边跑边骂赛道设计师，用愤怒换平衡"
+      },
+      {
+        "label": "D",
+        "text": "手机拍一段POV，摔了也算有素材"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B59",
+    "dimension": "B3",
+    "category": "trail",
+    "text": "为了备战百公里，你的爬升训练日常是：",
+    "options": [
+      {
+        "label": "A",
+        "text": "每周刷两次楼梯，从1楼爬到30楼再爬下来"
+      },
+      {
+        "label": "B",
+        "text": "周末进山拉练，爬升2000米只是开胃菜"
+      },
+      {
+        "label": "C",
+        "text": "跑步机坡度15%走45分钟，假装自己在 Alps"
+      },
+      {
+        "label": "D",
+        "text": "不练，比赛当天靠肾上腺素和报应硬扛"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B60",
+    "dimension": "B4",
+    "category": "trail",
+    "text": "冲线后摄影师拍下了你的完赛照，照片里的你：",
+    "options": [
+      {
+        "label": "A",
+        "text": "面带微笑竖起大拇指，像刚遛完公园"
+      },
+      {
+        "label": "B",
+        "text": "面目狰狞、四肢扭曲、号码布已飞到腰上"
+      },
+      {
+        "label": "C",
+        "text": "忙着发朋友圈，根本没看镜头"
+      },
+      {
+        "label": "D",
+        "text": "躺在终点线后面三米处，照片是志愿者俯拍的"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B61",
+    "dimension": "B4",
+    "category": "trail",
+    "text": "赛后三天，你的社交动态状态是：",
+    "options": [
+      {
+        "label": "A",
+        "text": "九宫格风景+路线+奖牌，文案引用《瓦尔登湖》"
+      },
+      {
+        "label": "B",
+        "text": "只发一张膝盖淤青特写，配文「还活着」"
+      },
+      {
+        "label": "C",
+        "text": "连发7条短视频，BGM是《平凡之路》加速版"
+      },
+      {
+        "label": "D",
+        "text": "一条都没发，默默在跑群回复「下次不报了」"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  },
+  {
+    "_id": "B62",
+    "dimension": "B4",
+    "category": "trail",
+    "text": "家人问你「跑这么久到底图什么」，你标准答案是：",
+    "options": [
+      {
+        "label": "A",
+        "text": "山里的风是免费的，我的快乐也是"
+      },
+      {
+        "label": "B",
+        "text": "为了朋友圈那几个赞，我付出了太多"
+      },
+      {
+        "label": "C",
+        "text": "图那一块完赛牌，可以当刮痧板用三年"
+      },
+      {
+        "label": "D",
+        "text": "沉默三秒，说「你不懂」，然后转身涂扶他林"
+      }
+    ],
+    "isSoul": false,
+    "isActive": true,
+    "version": 1,
+    "stats": {
+      "shownCount": 0,
+      "distribution": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      }
+    }
+  }
+]
