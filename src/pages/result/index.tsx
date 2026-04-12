@@ -1,8 +1,8 @@
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
 import { View, Text, Image, Button } from '@tarojs/components'
 import Taro from '@tarojs/taro'
 import { getTypeMeta, getRaceRecommendations, DIMENSION_LABELS } from '@/lib/quiz'
-import { characterImg } from '@/lib/config'
+import { characterImgHttps, resolveCloudFileIds } from '@/lib/config'
 import './index.scss'
 
 const DIMENSION_COLORS: Record<string, string> = {
@@ -13,16 +13,36 @@ const DIMENSION_COLORS: Record<string, string> = {
 
 export default function Result() {
   const [result] = useState(() => Taro.getStorageSync('quizResult'))
+  const [imgUrls, setImgUrls] = useState<Record<string, string>>({})
+
+  // 提前取值，hooks 不受 early return 影响
+  const runnerImg = result?.runnerImg || ''
+  const cpMatch = result?.cpMatch
+  const worstCpMatch = result?.worstCpMatch
+
+  // 通过 getTempFileURL 批量获取带鉴权的临时 HTTPS URL
+  useEffect(() => {
+    if (!runnerImg) return
+    const cpImg = cpMatch ? getTypeMeta(cpMatch.type).img : ''
+    const worstImg = worstCpMatch ? getTypeMeta(worstCpMatch.type).img : ''
+    const paths = [runnerImg, cpImg, worstImg]
+      .filter(Boolean)
+      .map(id => `characters/${id}.png`)
+
+    resolveCloudFileIds(paths).then(setImgUrls)
+  }, [runnerImg, cpMatch, worstCpMatch])
+
   if (!result) return <View />
 
   const {
-    userName, runnerType, runnerTypeEn, runnerImg, tagline,
+    userName, runnerType, runnerTypeEn, tagline,
     eggSymbols, isHiddenType, dimensionScores,
-    roast, hype, action, cpMatch, worstCpMatch,
-    verdict, profile, emoji, dominantDim,
+    roast, hype, action, verdict, profile, emoji, dominantDim,
   } = result
 
-  // 维度条形图数据
+  // 解析完成后才有值，避免 cloud:// 307 或裸 HTTPS 403
+  const getImgUrl = (id: string) => imgUrls[`characters/${id}.png`] || ''
+
   const donutSegments = useMemo(() => {
     const entries = Object.entries(dimensionScores || {}).filter(([_, s]: [string, number]) => s > 0)
     if (entries.length === 0) return []
@@ -53,7 +73,7 @@ export default function Result() {
   const _onShareAppMessage = () => ({
     title: `我是${runnerType}！测测你是哪种跑者`,
     path: '/pages/index/index',
-    imageUrl: runnerImg ? characterImg(runnerImg) : '',
+    imageUrl: runnerImg ? characterImgHttps(runnerImg) : '',
   })
 
   const copyShareText = () => {
@@ -73,9 +93,10 @@ export default function Result() {
       {/* 英雄区 */}
       <View className='hero-section'>
         {emoji && <Text className='hero-emoji'>{emoji}</Text>}
-        {runnerImg && (
-          <Image className='hero-avatar' src={characterImg(runnerImg)} mode='aspectFill' />
-        )}
+        {getImgUrl(runnerImg)
+          ? <Image className='hero-avatar' src={getImgUrl(runnerImg)} mode='aspectFill' />
+          : <View className='hero-avatar hero-avatar-loading' />
+        }
         {userName && <Text className='result-name'>{userName}</Text>}
         <Text className='hero-type'>{runnerType}</Text>
         {runnerTypeEn && <Text className='hero-type-en'>{runnerTypeEn}</Text>}
@@ -155,7 +176,10 @@ export default function Result() {
           <View className='cp-match-header'>
             {(() => {
               const m = getTypeMeta(cpMatch.type)
-              return m.img ? <Image className='cp-avatar' src={characterImg(m.img)} mode='aspectFill' /> : null
+              const url = m.img ? getImgUrl(m.img) : ''
+              return url
+                ? <Image className='cp-avatar' src={url} mode='aspectFill' />
+                : <View className='cp-avatar cp-avatar-loading' />
             })()}
             <View className='cp-match-info'>
               <Text className='cp-match-type best-text'>{cpMatch.type}</Text>
@@ -171,7 +195,10 @@ export default function Result() {
           <View className='cp-match-header'>
             {(() => {
               const m = getTypeMeta(worstCpMatch.type)
-              return m.img ? <Image className='cp-avatar' src={characterImg(m.img)} mode='aspectFill' /> : null
+              const url = m.img ? getImgUrl(m.img) : ''
+              return url
+                ? <Image className='cp-avatar' src={url} mode='aspectFill' />
+                : <View className='cp-avatar cp-avatar-loading' />
             })()}
             <View className='cp-match-info'>
               <Text className='cp-match-type worst-text'>{worstCpMatch.type}</Text>

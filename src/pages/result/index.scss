@@ -23,6 +23,7 @@
   text-align: center;
   margin-bottom: 56px;
   padding: 0 32px;
+  width: calc(100% - 64px);
 }
 
 .hero-avatar {
@@ -31,6 +32,14 @@
   border-radius: 48rpx;
   border: 8rpx solid #E63946;
   margin-bottom: 32rpx;
+}
+
+.hero-avatar-loading {
+  background: linear-gradient(135deg, #f5f5f5, #ebebeb);
+}
+
+.cp-avatar-loading {
+  background: #f0f0f0;
 }
 
 .result-name {
@@ -376,8 +385,7 @@
   flex-direction: column;
   gap: 24px;
   width: calc(100% - 64px);
-  padding: 0 32px;
-  margin-bottom: 60px;
+  margin: 0 32px 60px;
 }
 
 .result-btn-primary {
@@ -521,10 +529,11 @@
 
 // profile section
 .result-profile {
-  margin: 24px;
-  padding: 24px;
+  margin: 0 32px 32px;
+  padding: 32px;
   background: #FFFFFF;
-  border-radius: 16px;
+  border-radius: 24px;
+  width: calc(100% - 64px);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 .profile-label {
@@ -542,11 +551,12 @@
 
 // verdict section
 .result-verdict {
-  margin: 24px;
-  padding: 24px;
+  margin: 0 32px 32px;
+  padding: 32px;
   background: #F8FAFC;
-  border-radius: 16px;
-  border: 1px solid #E2E8F0;
+  border-radius: 24px;
+  border: 2px solid #E2E8F0;
+  width: calc(100% - 64px);
 }
 .verdict-label {
   font-size: 24px;
